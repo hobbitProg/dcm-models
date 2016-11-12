@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="54">
+<org.eventb.core.poIdentifier name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
+<org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
+<org.eventb.core.poIdentifier name="BookCatalogWindow" org.eventb.core.type="ℙ(BookCatalogWindow)"/>
+<org.eventb.core.poIdentifier name="BookEntryDialog" org.eventb.core.type="ℙ(BookEntryDialog)"/>
+<org.eventb.core.poIdentifier name="Categories" org.eventb.core.type="ℙ(Categories)"/>
+<org.eventb.core.poIdentifier name="CoverImages" org.eventb.core.type="ℙ(CoverImages)"/>
+<org.eventb.core.poIdentifier name="Descriptions" org.eventb.core.type="ℙ(Descriptions)"/>
+<org.eventb.core.poIdentifier name="ISBNs" org.eventb.core.type="ℙ(ISBNs)"/>
+<org.eventb.core.poIdentifier name="SelectedBookWindow" org.eventb.core.type="ℙ(SelectedBookWindow)"/>
+<org.eventb.core.poIdentifier name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+<org.eventb.core.poIdentifier name="BlankBookEntryDialog" org.eventb.core.type="BookEntryDialog"/>
+<org.eventb.core.poIdentifier name="BookCatalog" org.eventb.core.type="ActiveCatalog"/>
+<org.eventb.core.poIdentifier name="BookEntryDialogContainsValidData" org.eventb.core.type="ℙ(BookEntryDialog×BOOL)"/>
+<org.eventb.core.poIdentifier name="DisplayedTitles" org.eventb.core.type="ℙ(BookCatalogWindow×ℙ(Titles))"/>
+<org.eventb.core.poIdentifier name="EmptySelectedBook" org.eventb.core.type="SelectedBookWindow"/>
+<org.eventb.core.poIdentifier name="NoAuthor" org.eventb.core.type="Authors"/>
+<org.eventb.core.poIdentifier name="NoCoverImage" org.eventb.core.type="CoverImages"/>
+<org.eventb.core.poIdentifier name="NoDescription" org.eventb.core.type="Descriptions"/>
+<org.eventb.core.poIdentifier name="NoISBN" org.eventb.core.type="ISBNs"/>
+<org.eventb.core.poIdentifier name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.poIdentifier name="SelectedBookAuthor" org.eventb.core.type="ℙ(SelectedBookWindow×Authors)"/>
+<org.eventb.core.poIdentifier name="SelectedBookCategories" org.eventb.core.type="ℙ(SelectedBookWindow×ℙ(Categories))"/>
+<org.eventb.core.poIdentifier name="SelectedBookCover" org.eventb.core.type="ℙ(SelectedBookWindow×CoverImages)"/>
+<org.eventb.core.poIdentifier name="SelectedBookDescription" org.eventb.core.type="ℙ(SelectedBookWindow×Descriptions)"/>
+<org.eventb.core.poIdentifier name="SelectedBookISBN" org.eventb.core.type="ℙ(SelectedBookWindow×ISBNs)"/>
+<org.eventb.core.poIdentifier name="SelectedBookTitle" org.eventb.core.type="ℙ(SelectedBookWindow×Titles)"/>
+<org.eventb.core.poIdentifier name="TitleOfEnteredBook" org.eventb.core.type="ℙ(BookEntryDialog×Titles)"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatb" org.eventb.core.predicate="BookCatalog∈ActiveCatalog" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatc" org.eventb.core.predicate="NoTitle∈Titles" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#:"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatd" org.eventb.core.predicate="NoAuthor∈Authors" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDate" org.eventb.core.predicate="NoISBN∈ISBNs" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#L"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatf" org.eventb.core.predicate="NoDescription∈Descriptions" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#Q"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatg" org.eventb.core.predicate="NoCoverImage∈CoverImages" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#V"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDath" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDati" org.eventb.core.predicate="DisplayedTitles∈BookCatalogWindow → ℙ(Titles)" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatj" org.eventb.core.predicate="BookEntryDialogContainsValidData∈BookEntryDialog → BOOL" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatk" org.eventb.core.predicate="TitleOfEnteredBook∈BookEntryDialog → Titles" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatl" org.eventb.core.predicate="EmptySelectedBook∈SelectedBookWindow" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#="/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatm" org.eventb.core.predicate="SelectedBookTitle∈SelectedBookWindow → Titles" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#@"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatn" org.eventb.core.predicate="SelectedBookAuthor∈SelectedBookWindow → Authors" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#I"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDato" org.eventb.core.predicate="SelectedBookISBN∈SelectedBookWindow → ISBNs" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#O"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatp" org.eventb.core.predicate="SelectedBookDescription∈SelectedBookWindow → Descriptions" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#S"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatq" org.eventb.core.predicate="SelectedBookCover∈SelectedBookWindow → CoverImages" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#X"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatr" org.eventb.core.predicate="SelectedBookCategories∈SelectedBookWindow → ℙ(Categories)" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#["/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDats" org.eventb.core.predicate="SelectedBookTitle(EmptySelectedBook)=NoTitle" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#&gt;"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatt" org.eventb.core.predicate="SelectedBookAuthor(EmptySelectedBook)=NoAuthor" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#J"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatu" org.eventb.core.predicate="SelectedBookISBN(EmptySelectedBook)=NoISBN" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#M"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatv" org.eventb.core.predicate="SelectedBookDescription(EmptySelectedBook)=NoDescription" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#T"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatw" org.eventb.core.predicate="SelectedBookCover(EmptySelectedBook)=NoCoverImage" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#Y"/>
+<org.eventb.core.poPredicate name="BookEntryDialogContainsValidDatx" org.eventb.core.predicate="SelectedBookCategories(EmptySelectedBook)=(∅ ⦂ ℙ(Categories))" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#\\"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="54">
+<org.eventb.core.poIdentifier name="bookCatalog" org.eventb.core.type="BookCatalogWindow"/>
+<org.eventb.core.poIdentifier name="bookDialog" org.eventb.core.type="BookEntryDialog"/>
+<org.eventb.core.poIdentifier name="bookIsBeingEdited" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="catalogBeingDisplayed" org.eventb.core.type="ActiveCatalog"/>
+<org.eventb.core.poIdentifier name="selectedBook" org.eventb.core.type="SelectedBookWindow"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/InitialBookDialogNotKnown/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTALLHYPcatalogBeingDisplayee"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="BookEntryDialog≠(∅ ⦂ ℙ(BookEntryDialog))" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#'|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#'|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTALLHYPcatalogBeingDisplayee"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/BookCatalogShowsBooksInCatalog/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTALLHYPcatalogBeingDisplayee"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="BookCatalogWindow≠(∅ ⦂ ℙ(BookCatalogWindow))" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTALLHYPcatalogBeingDisplayee"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcatalogBeingDisplayee" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="54">
+<org.eventb.core.poIdentifier name="bookDialog'" org.eventb.core.type="BookEntryDialog"/>
+<org.eventb.core.poIdentifier name="bookIsBeingEdited'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="catalogBeingDisplayed'" org.eventb.core.type="ActiveCatalog"/>
+<org.eventb.core.poIdentifier name="selectedBook'" org.eventb.core.type="SelectedBookWindow"/>
+<org.eventb.core.poIdentifier name="bookCatalog'" org.eventb.core.type="BookCatalogWindow"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcatalogBeingDisplayee" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTIDENTcatalogBeingDisplayee" org.eventb.core.poStamp="54"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTcatalogBeingDisplayef" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="54">
+<org.eventb.core.poIdentifier name="bookDialog'" org.eventb.core.type="BookEntryDialog"/>
+<org.eventb.core.poIdentifier name="bookIsBeingEdited'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcatalogBeingDisplayef" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTIDENTcatalogBeingDisplayef" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="catalogBeingDisplayed=BookCatalog" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#\/|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="bookIsBeingEdited=FALSE" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#\/|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="CommitNewBook/NewBookHasNewTitle/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingDisplayeg'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)∧TitleOfEnteredBook∈BookEntryDialog ⇸ Titles∧bookCatalog∈dom(DisplayedTitles)∧DisplayedTitles∈BookCatalogWindow ⇸ ℙ(Titles)" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingDisplayeg'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="CommitNewBook/UpdatedBookCatalogContainsNewBookAndOriginalBooks/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingDisplayeg)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="updatedBookCatalog∈dom(DisplayedTitles)∧DisplayedTitles∈BookCatalogWindow ⇸ ℙ(Titles)∧bookDialog∈dom(TitleOfEnteredBook)∧TitleOfEnteredBook∈BookEntryDialog ⇸ Titles∧bookCatalog∈dom(DisplayedTitles)" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingDisplayeg)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTcatalogBeingDisplayeg" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="54">
+<org.eventb.core.poIdentifier name="bookIsBeingEdited'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="selectedBook'" org.eventb.core.type="SelectedBookWindow"/>
+<org.eventb.core.poIdentifier name="bookCatalog'" org.eventb.core.type="BookCatalogWindow"/>
+<org.eventb.core.poIdentifier name="updatedBookCatalog" org.eventb.core.type="BookCatalogWindow"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPcatalogBeingDisplayeg'" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTIDENTcatalogBeingDisplayeg" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookIsBeingEdited=TRUE" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPcatalogBeingDisplayeg)" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingDisplayeg'" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog)∉DisplayedTitles(bookCatalog)" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="updatedBookCatalog∈BookCatalogWindow" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcatalogBeingDisplayeg" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingDisplayeg)" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="DisplayedTitles(updatedBookCatalog)={TitleOfEnteredBook(bookDialog)}∪DisplayedTitles(bookCatalog)" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.event#0|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ClientDesktop/ClientDesktop.bpo|org.eventb.core.poFile#ClientDesktop|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="54">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookIsBeingEdited∈BOOL" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.invariant#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="catalogBeingDisplayed∈ActiveCatalog" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="bookDialog∈BookEntryDialog" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="bookCatalog∈BookCatalogWindow" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="selectedBook∈SelectedBookWindow" org.eventb.core.source="/ClientDesktop/ClientDesktop.bum|org.eventb.core.machineFile#ClientDesktop|org.eventb.core.invariant#4"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="2" org.eventb.core.identifier="Titles"/>
+<org.eventb.core.carrierSet name="A" org.eventb.core.identifier="Authors"/>
+<org.eventb.core.carrierSet name="B" org.eventb.core.identifier="ISBNs"/>
+<org.eventb.core.carrierSet name="C" org.eventb.core.identifier="Descriptions"/>
+<org.eventb.core.carrierSet name="D" org.eventb.core.identifier="CoverImages"/>
+<org.eventb.core.carrierSet name="E" org.eventb.core.identifier="Categories"/>
+<org.eventb.core.carrierSet name="," org.eventb.core.identifier="ActiveCatalog"/>
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="BookCatalogWindow"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="BookEntryDialog"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="SelectedBookWindow"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="BookCatalogCanBeActive" org.eventb.core.predicate="BookCatalog ∈ ActiveCatalog" org.eventb.core.theorem="true"/>
+<org.eventb.core.constant name="9" org.eventb.core.identifier="NoTitle"/>
+<org.eventb.core.constant name="F" org.eventb.core.identifier="NoAuthor"/>
+<org.eventb.core.constant name="K" org.eventb.core.identifier="NoISBN"/>
+<org.eventb.core.constant name="P" org.eventb.core.identifier="NoDescription"/>
+<org.eventb.core.constant name="U" org.eventb.core.identifier="NoCoverImage"/>
+<org.eventb.core.constant name="/" org.eventb.core.identifier="BookCatalog"/>
+<org.eventb.core.constant name="0" org.eventb.core.identifier="BlankBookEntryDialog"/>
+<org.eventb.core.axiom name=":" org.eventb.core.label="NoTitleIsATitle" org.eventb.core.predicate="NoTitle ∈ Titles"/>
+<org.eventb.core.axiom name="G" org.eventb.core.label="NoAuthorIsAnAuthor" org.eventb.core.predicate="NoAuthor ∈ Authors"/>
+<org.eventb.core.axiom name="L" org.eventb.core.label="NoISBNIsAnISBN" org.eventb.core.predicate="NoISBN ∈ ISBNs"/>
+<org.eventb.core.axiom name="Q" org.eventb.core.label="NoDescriptionIsADescription" org.eventb.core.predicate="NoDescription ∈ Descriptions"/>
+<org.eventb.core.axiom name="V" org.eventb.core.label="NoCoverImageIsACoverImage" org.eventb.core.predicate="NoCoverImage ∈ CoverImages"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="BlankBookEntryDialog" org.eventb.core.predicate="BlankBookEntryDialog ∈ BookEntryDialog"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="DisplayedTitles"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="DisplayedTitlesQAreOnBookCatalogWindow" org.eventb.core.predicate="DisplayedTitles ∈ BookCatalogWindow → ℙ(Titles)" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="BookEntryDialogDataIsPredicateOnBookEntryDialog" org.eventb.core.predicate="BookEntryDialogContainsValidData ∈ BookEntryDialog → BOOL"/>
+<org.eventb.core.constant name="6" org.eventb.core.identifier="BookEntryDialogContainsValidData"/>
+<org.eventb.core.constant name="7" org.eventb.core.identifier="TitleOfEnteredBook"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="TitleOfEnteredBookIsTitleFromBookDialog" org.eventb.core.predicate="TitleOfEnteredBook ∈ BookEntryDialog → Titles"/>
+<org.eventb.core.constant name="?" org.eventb.core.identifier="SelectedBookTitle"/>
+<org.eventb.core.constant name="H" org.eventb.core.identifier="SelectedBookAuthor"/>
+<org.eventb.core.constant name="N" org.eventb.core.identifier="SelectedBookISBN"/>
+<org.eventb.core.constant name="R" org.eventb.core.identifier="SelectedBookDescription"/>
+<org.eventb.core.constant name="W" org.eventb.core.identifier="SelectedBookCover"/>
+<org.eventb.core.constant name="Z" org.eventb.core.identifier="SelectedBookCategories"/>
+<org.eventb.core.constant name=";" org.eventb.core.identifier="EmptySelectedBook"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="EmptySelectedBookIsSelectedBookCatalog" org.eventb.core.predicate="EmptySelectedBook ∈ SelectedBookWindow"/>
+<org.eventb.core.axiom name="@" org.eventb.core.label="SelectedBookTitleIsTitleFromSelectedBookWindow" org.eventb.core.predicate="SelectedBookTitle ∈ SelectedBookWindow → Titles"/>
+<org.eventb.core.axiom name="I" org.eventb.core.label="SelectedBookAuthorIsTheAuthorOfTheSelectedBook" org.eventb.core.predicate="SelectedBookAuthor ∈ SelectedBookWindow → Authors"/>
+<org.eventb.core.axiom name="O" org.eventb.core.label="ISBNFromSelectedBookCanBeRetrieved" org.eventb.core.predicate="SelectedBookISBN ∈ SelectedBookWindow → ISBNs"/>
+<org.eventb.core.axiom name="S" org.eventb.core.label="DescriptionFromSelectedBookCanBeRetrieved" org.eventb.core.predicate="SelectedBookDescription ∈ SelectedBookWindow → Descriptions"/>
+<org.eventb.core.axiom name="X" org.eventb.core.label="CoverOfSelectedBookCanBeRetrieved" org.eventb.core.predicate="SelectedBookCover ∈ SelectedBookWindow → CoverImages"/>
+<org.eventb.core.axiom name="[" org.eventb.core.label="CategoriesAssociatedWithSelectedBookCanBeRetrieved" org.eventb.core.predicate="SelectedBookCategories ∈ SelectedBookWindow → ℙ(Categories)"/>
+<org.eventb.core.axiom name="&gt;" org.eventb.core.label="EmptySelectedBookHasNoTitle" org.eventb.core.predicate="SelectedBookTitle(EmptySelectedBook) = NoTitle" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="J" org.eventb.core.label="EmptySelectedBookHasNoAuthor" org.eventb.core.predicate="SelectedBookAuthor(EmptySelectedBook) = NoAuthor"/>
+<org.eventb.core.axiom name="M" org.eventb.core.label="EmptySelectedBookHasNoISBN" org.eventb.core.predicate="SelectedBookISBN(EmptySelectedBook) = NoISBN"/>
+<org.eventb.core.axiom name="T" org.eventb.core.label="EmptySelectedBookHasNoDescription" org.eventb.core.predicate="SelectedBookDescription(EmptySelectedBook) = NoDescription"/>
+<org.eventb.core.axiom name="Y" org.eventb.core.label="EmptySelectedBookHasNoCover" org.eventb.core.predicate="SelectedBookCover(EmptySelectedBook) = NoCoverImage"/>
+<org.eventb.core.axiom name="\" org.eventb.core.label="EmptySelectedBookHasNoCategories" org.eventb.core.predicate="SelectedBookCategories(EmptySelectedBook) = ∅"/>
+</org.eventb.core.contextFile>

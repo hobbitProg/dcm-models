@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="bookIsBeingEdited ≔ FALSE" org.eventb.core.label="BookIsInitiallyNotBeingEdited"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="catalogBeingDisplayed ≔ BookCatalog" org.eventb.core.label="InitiallyBooksAreBeingDisplayed"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="bookDialog :∈ BookEntryDialog" org.eventb.core.label="InitialBookDialogNotKnown"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="bookCatalog :∈ BookCatalogWindow" org.eventb.core.label="BookCatalogShowsBooksInCatalog"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="selectedBook ≔ EmptySelectedBook" org.eventb.core.label="SelectedBookInitiallyEmpty"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="(" org.eventb.core.identifier="bookIsBeingEdited"/>
+<org.eventb.core.invariant name=")" org.eventb.core.label="BookIsBeingEditedIsFlag" org.eventb.core.predicate="bookIsBeingEdited ∈ BOOL"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="catalogBeingDisplayed"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="OnlyCatalogsCanBeDisplayed" org.eventb.core.predicate="catalogBeingDisplayed ∈ ActiveCatalog"/>
+<org.eventb.core.seesContext name="," org.eventb.core.target="DesktopContext"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="bookDialog"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="BookDialogLetsUserEnterBookInformation" org.eventb.core.predicate="bookDialog ∈ BookEntryDialog"/>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="StartAddingBook">
+<org.eventb.core.guard name="'" org.eventb.core.label="BookCatalogIsBeingDisplayed" org.eventb.core.predicate="catalogBeingDisplayed = BookCatalog"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="NothingBeingEdited" org.eventb.core.predicate="bookIsBeingEdited = FALSE"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="bookIsBeingEdited ≔ TRUE" org.eventb.core.label="BookIsBeingEdited"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="bookDialog ≔ BlankBookEntryDialog" org.eventb.core.label="BookDialogContainsNoInformation"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CommitNewBook">
+<org.eventb.core.guard name="'" org.eventb.core.label="BookCurrentlyBeingEdited" org.eventb.core.predicate="bookIsBeingEdited = TRUE"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="bookIsBeingEdited ≔ FALSE" org.eventb.core.label="BookNoLongerBeingEdited"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="NewBookHasNewTitle" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog) ∉ DisplayedTitles(bookCatalog)"/>
+<org.eventb.core.parameter name="," org.eventb.core.identifier="updatedBookCatalog"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookCatalogIsBookCatalogWindow" org.eventb.core.predicate="updatedBookCatalog ∈ BookCatalogWindow"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookCatalogContainsNewBookAndOriginalBooks" org.eventb.core.predicate="DisplayedTitles(updatedBookCatalog) = {TitleOfEnteredBook(bookDialog)} ∪ DisplayedTitles(bookCatalog)"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="bookCatalog ≔ updatedBookCatalog" org.eventb.core.label="BookCatalogWasUpdated"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="selectedBook ≔ EmptySelectedBook" org.eventb.core.label="SelectedBookIsEmpty"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="bookCatalog"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="BookCatalogDisplaysBooksInCatalog" org.eventb.core.predicate="bookCatalog ∈ BookCatalogWindow"/>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="selectedBook"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="SelectedBookIsAWindow" org.eventb.core.predicate="selectedBook ∈ SelectedBookWindow"/>
+</org.eventb.core.machineFile>
