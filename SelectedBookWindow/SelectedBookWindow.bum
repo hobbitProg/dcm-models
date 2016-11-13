@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="selectedBookTitle ≔ NoTitle" org.eventb.core.label="InitiallyNoTitleIsSelected"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="selectedBookAuthor ≔ NoAuthor" org.eventb.core.label="InitiallyNoAuthorIsSelected"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="selectedBookISBN ≔ NoISBN" org.eventb.core.label="InititallyNoISBNIsSelected"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="selectedBookDescription ≔ NoDescription" org.eventb.core.label="InitiallyNoDescriptionIsSelected"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="selectedBookCover ≔ NoCoverImage" org.eventb.core.label="InitiallyNoCoverIsSelected"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="selectedBookCategories ≔ ∅" org.eventb.core.label="InitiallyNoCategoriesAreSelected"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="SelectedBookWindowContext"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="selectedBookTitle"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="SelectedBookTitleIsATitle" org.eventb.core.predicate="selectedBookTitle ∈ Titles"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="selectedBookAuthor"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="SelectedBookAuthorIsAnAuthor" org.eventb.core.predicate="selectedBookAuthor ∈ Authors"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="selectedBookISBN"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="SelectedISBNIsAnISBN" org.eventb.core.predicate="selectedBookISBN ∈ ISBNs"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="selectedBookDescription"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="SelectedDescriptionIsADescription" org.eventb.core.predicate="selectedBookDescription ∈ Descriptions"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="selectedBookCover"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="SelectedBookCoverIsACoverImage" org.eventb.core.predicate="selectedBookCover ∈ CoverImages"/>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="selectedBookCategories"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="SelectedBookCategoriesIsASetOfCategories" org.eventb.core.predicate="selectedBookCategories ∈ ℙ(Categories)"/>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ClearSelectedBook">
+<org.eventb.core.action name="'" org.eventb.core.assignment="selectedBookTitle ≔ NoTitle" org.eventb.core.label="TitleIsCleared"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="selectedBookAuthor ≔ NoAuthor" org.eventb.core.label="AuthorIsCleared"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="selectedBookISBN ≔ NoISBN" org.eventb.core.label="ISBNIsCleared"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="selectedBookDescription ≔ NoDescription" org.eventb.core.label="DescriptionIsCleared"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="selectedBookCover ≔ NoCoverImage" org.eventb.core.label="CoverIsCleared"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="selectedBookCategories ≔ ∅" org.eventb.core.label="CategoriesAreCleared"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

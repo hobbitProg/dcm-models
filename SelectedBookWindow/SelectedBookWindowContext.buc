@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Titles"/>
+<org.eventb.core.constant name="(" org.eventb.core.identifier="NoTitle"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="NoTitleIsATitle" org.eventb.core.predicate="NoTitle ∈ Titles"/>
+<org.eventb.core.carrierSet name="*" org.eventb.core.identifier="Authors"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="NoAuthor"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="NoAuthorIsAnAuthor" org.eventb.core.predicate="NoAuthor ∈ Authors"/>
+<org.eventb.core.carrierSet name="-" org.eventb.core.identifier="ISBNs"/>
+<org.eventb.core.constant name="." org.eventb.core.identifier="NoISBN"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="NoISBNIsAnISBN" org.eventb.core.predicate="NoISBN ∈ ISBNs"/>
+<org.eventb.core.carrierSet name="0" org.eventb.core.identifier="Descriptions"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="NoDescription"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="NoDescriptionIsADescription" org.eventb.core.predicate="NoDescription ∈ Descriptions"/>
+<org.eventb.core.carrierSet name="3" org.eventb.core.identifier="CoverImages"/>
+<org.eventb.core.constant name="4" org.eventb.core.identifier="NoCoverImage"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="NoCoverImageIsACoverImage" org.eventb.core.predicate="NoCoverImage ∈ CoverImages"/>
+<org.eventb.core.carrierSet name="6" org.eventb.core.identifier="Categories"/>
+</org.eventb.core.contextFile>
