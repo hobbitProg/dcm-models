@@ -486,4 +486,90 @@
 <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="DisplayedTitlesAreOnBookCatalogWindow/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="NoTitle∈Titles">
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="NoCoverImage∈CoverImages">
+<org.eventb.core.prIdent name="CoverImages" org.eventb.core.type="ℙ(CoverImages)"/>
+<org.eventb.core.prIdent name="NoCoverImage" org.eventb.core.type="CoverImages"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BookCatalog∈ActiveCatalog">
+<org.eventb.core.prIdent name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
+<org.eventb.core.prIdent name="BookCatalog" org.eventb.core.type="ActiveCatalog"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="NoISBN∈ISBNs">
+<org.eventb.core.prIdent name="ISBNs" org.eventb.core.type="ℙ(ISBNs)"/>
+<org.eventb.core.prIdent name="NoISBN" org.eventb.core.type="ISBNs"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="NoDescription∈Descriptions">
+<org.eventb.core.prIdent name="Descriptions" org.eventb.core.type="ℙ(Descriptions)"/>
+<org.eventb.core.prIdent name="NoDescription" org.eventb.core.type="Descriptions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="NoAuthor∈Authors">
+<org.eventb.core.prIdent name="Authors" org.eventb.core.type="ℙ(Authors)"/>
+<org.eventb.core.prIdent name="NoAuthor" org.eventb.core.type="Authors"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog">
+<org.eventb.core.prIdent name="BlankBookEntryDialog" org.eventb.core.type="BookEntryDialog"/>
+<org.eventb.core.prIdent name="BookEntryDialog" org.eventb.core.type="ℙ(BookEntryDialog)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="TitlesOfBooksInCatalogsAreOnBookCatalogWindow/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p6"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="NoTitle∈Titles">
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="NoCoverImage∈CoverImages">
+<org.eventb.core.prIdent name="CoverImages" org.eventb.core.type="ℙ(CoverImages)"/>
+<org.eventb.core.prIdent name="NoCoverImage" org.eventb.core.type="CoverImages"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="BookCatalog∈ActiveCatalog">
+<org.eventb.core.prIdent name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
+<org.eventb.core.prIdent name="BookCatalog" org.eventb.core.type="ActiveCatalog"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="NoISBN∈ISBNs">
+<org.eventb.core.prIdent name="ISBNs" org.eventb.core.type="ℙ(ISBNs)"/>
+<org.eventb.core.prIdent name="NoISBN" org.eventb.core.type="ISBNs"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="NoDescription∈Descriptions">
+<org.eventb.core.prIdent name="Descriptions" org.eventb.core.type="ℙ(Descriptions)"/>
+<org.eventb.core.prIdent name="NoDescription" org.eventb.core.type="Descriptions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="NoAuthor∈Authors">
+<org.eventb.core.prIdent name="Authors" org.eventb.core.type="ℙ(Authors)"/>
+<org.eventb.core.prIdent name="NoAuthor" org.eventb.core.type="Authors"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog">
+<org.eventb.core.prIdent name="BlankBookEntryDialog" org.eventb.core.type="BookEntryDialog"/>
+<org.eventb.core.prIdent name="BookEntryDialog" org.eventb.core.type="ℙ(BookEntryDialog)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
 </org.eventb.core.prFile>

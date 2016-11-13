@@ -125,24 +125,28 @@
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="CommitNewBook/NewBookHasNewTitle/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="BookCatalogWindow,BookEntryDialog,Titles">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p1">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -150,15 +154,15 @@
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p11">
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p18">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p1"/>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p12">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p2">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p19">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -166,54 +170,78 @@
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e1"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p13">
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p20">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p2"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-<org.eventb.core.prIdent name="DisplayedTitles" org.eventb.core.type="ℙ(BookCatalogWindow×ℙ(Titles))"/>
 <org.eventb.core.prIdent name="TitleOfEnteredBook" org.eventb.core.type="ℙ(BookEntryDialog×Titles)"/>
+<org.eventb.core.prIdent name="TitlesOfBooksInCatalog" org.eventb.core.type="ℙ(BookCatalogWindow×ℙ(Titles))"/>
 <org.eventb.core.prIdent name="bookCatalog" org.eventb.core.type="BookCatalogWindow"/>
 <org.eventb.core.prIdent name="bookDialog" org.eventb.core.type="BookEntryDialog"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="bookCatalog∈BookCatalogWindow"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="bookDialog∈BookEntryDialog"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="TitleOfEnteredBook∈BookEntryDialog ⇸ Titles"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="DisplayedTitles∈BookCatalogWindow → ℙ(Titles)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)∧TitleOfEnteredBook∈BookEntryDialog ⇸ Titles∧bookCatalog∈dom(TitlesOfBooksInCatalog)∧TitlesOfBooksInCatalog∈BookCatalogWindow ⇸ ℙ(Titles)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="bookCatalog∈BookCatalogWindow"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="selectedBook∈SelectedBookWindow">
+<org.eventb.core.prIdent name="SelectedBookWindow" org.eventb.core.type="ℙ(SelectedBookWindow)"/>
+<org.eventb.core.prIdent name="selectedBook" org.eventb.core.type="SelectedBookWindow"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="bookCatalog∈dom(TitlesOfBooksInCatalog)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="NoTitle∈Titles">
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="bookDialog∈BookEntryDialog"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="TitleOfEnteredBook∈BookEntryDialog ⇸ Titles"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="NoISBN∈ISBNs">
+<org.eventb.core.prIdent name="ISBNs" org.eventb.core.type="ℙ(ISBNs)"/>
+<org.eventb.core.prIdent name="NoISBN" org.eventb.core.type="ISBNs"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="NoDescription∈Descriptions">
+<org.eventb.core.prIdent name="Descriptions" org.eventb.core.type="ℙ(Descriptions)"/>
+<org.eventb.core.prIdent name="NoDescription" org.eventb.core.type="Descriptions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="TitlesOfBooksInCatalog∈BookCatalogWindow → ℙ(Titles)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="NoAuthor∈Authors">
+<org.eventb.core.prIdent name="Authors" org.eventb.core.type="ℙ(Authors)"/>
+<org.eventb.core.prIdent name="NoAuthor" org.eventb.core.type="Authors"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="EmptySelectedBook∈SelectedBookWindow">
+<org.eventb.core.prIdent name="EmptySelectedBook" org.eventb.core.type="SelectedBookWindow"/>
+<org.eventb.core.prIdent name="SelectedBookWindow" org.eventb.core.type="ℙ(SelectedBookWindow)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="NoCoverImage∈CoverImages">
+<org.eventb.core.prIdent name="CoverImages" org.eventb.core.type="ℙ(CoverImages)"/>
+<org.eventb.core.prIdent name="NoCoverImage" org.eventb.core.type="CoverImages"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TitleOfEnteredBook∈BookEntryDialog → Titles"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="BookCatalog∈ActiveCatalog">
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="BookCatalog∈ActiveCatalog">
 <org.eventb.core.prIdent name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
 <org.eventb.core.prIdent name="BookCatalog" org.eventb.core.type="ActiveCatalog"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)∧TitleOfEnteredBook∈BookEntryDialog ⇸ Titles∧bookCatalog∈dom(DisplayedTitles)∧DisplayedTitles∈BookCatalogWindow ⇸ ℙ(Titles)"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="bookIsBeingEdited∈BOOL">
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="TitlesOfBooksInCatalog∈BookCatalogWindow ⇸ ℙ(Titles)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="bookIsBeingEdited∈BOOL">
 <org.eventb.core.prIdent name="bookIsBeingEdited" org.eventb.core.type="BOOL"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="catalogBeingDisplayed∈ActiveCatalog">
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="catalogBeingDisplayed∈ActiveCatalog">
 <org.eventb.core.prIdent name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
 <org.eventb.core.prIdent name="catalogBeingDisplayed" org.eventb.core.type="ActiveCatalog"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="bookCatalog∈dom(DisplayedTitles)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="DisplayedTitles∈BookCatalogWindow ⇸ ℙ(Titles)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog">
 <org.eventb.core.prIdent name="BlankBookEntryDialog" org.eventb.core.type="BookEntryDialog"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="BookEntryDialog"/>
 <org.eventb.core.prExpr name="e1" org.eventb.core.expression="BookCatalogWindow"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="CommitNewBook/UpdatedBookCatalogContainsNewBookAndOriginalBooks/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BookCatalogWindow,BookEntryDialog,Titles">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p4,p5">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
@@ -227,11 +255,18 @@
 <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p14"/>
 <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p3">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
-<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p24" org.eventb.core.prHyps=""/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -244,45 +279,72 @@
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="DisplayedTitles" org.eventb.core.type="ℙ(BookCatalogWindow×ℙ(Titles))"/>
 <org.eventb.core.prIdent name="TitleOfEnteredBook" org.eventb.core.type="ℙ(BookEntryDialog×Titles)"/>
+<org.eventb.core.prIdent name="TitlesOfBooksInCatalog" org.eventb.core.type="ℙ(BookCatalogWindow×ℙ(Titles))"/>
 <org.eventb.core.prIdent name="bookCatalog" org.eventb.core.type="BookCatalogWindow"/>
 <org.eventb.core.prIdent name="bookDialog" org.eventb.core.type="BookEntryDialog"/>
 <org.eventb.core.prIdent name="updatedBookCatalog" org.eventb.core.type="BookCatalogWindow"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="bookCatalog∈BookCatalogWindow"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="bookDialog∈BookEntryDialog"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="updatedBookCatalog∈dom(DisplayedTitles)"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="TitleOfEnteredBook∈BookEntryDialog ⇸ Titles"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="updatedBookCatalog∈BookCatalogWindow"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="DisplayedTitles∈BookCatalogWindow → ℙ(Titles)"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="updatedBookCatalog∈dom(DisplayedTitles)∧DisplayedTitles∈BookCatalogWindow ⇸ ℙ(Titles)∧bookDialog∈dom(TitleOfEnteredBook)∧TitleOfEnteredBook∈BookEntryDialog ⇸ Titles∧bookCatalog∈dom(DisplayedTitles)"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog)∉DisplayedTitles(bookCatalog)"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="updatedBookCatalog∈dom(DisplayedTitles)∧⊤∧⊤∧⊤∧⊤"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬TitleOfEnteredBook(bookDialog)∈DisplayedTitles(bookCatalog)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="bookCatalog∈BookCatalogWindow"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="selectedBook∈SelectedBookWindow">
+<org.eventb.core.prIdent name="SelectedBookWindow" org.eventb.core.type="ℙ(SelectedBookWindow)"/>
+<org.eventb.core.prIdent name="selectedBook" org.eventb.core.type="SelectedBookWindow"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="NoTitle∈Titles">
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="bookDialog∈BookEntryDialog"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="updatedBookCatalog∈dom(TitlesOfBooksInCatalog)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="NoISBN∈ISBNs">
+<org.eventb.core.prIdent name="ISBNs" org.eventb.core.type="ℙ(ISBNs)"/>
+<org.eventb.core.prIdent name="NoISBN" org.eventb.core.type="ISBNs"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BookCatalog∈ActiveCatalog">
 <org.eventb.core.prIdent name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
 <org.eventb.core.prIdent name="BookCatalog" org.eventb.core.type="ActiveCatalog"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="bookIsBeingEdited∈BOOL">
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="updatedBookCatalog∈dom(TitlesOfBooksInCatalog)∧⊤∧⊤∧⊤∧⊤"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="bookIsBeingEdited∈BOOL">
 <org.eventb.core.prIdent name="bookIsBeingEdited" org.eventb.core.type="BOOL"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="catalogBeingDisplayed∈ActiveCatalog">
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="bookCatalog∈dom(TitlesOfBooksInCatalog)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬TitleOfEnteredBook(bookDialog)∈TitlesOfBooksInCatalog(bookCatalog)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="TitleOfEnteredBook∈BookEntryDialog ⇸ Titles"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="bookDialog∈dom(TitleOfEnteredBook)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="updatedBookCatalog∈BookCatalogWindow"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="NoDescription∈Descriptions">
+<org.eventb.core.prIdent name="Descriptions" org.eventb.core.type="ℙ(Descriptions)"/>
+<org.eventb.core.prIdent name="NoDescription" org.eventb.core.type="Descriptions"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="TitlesOfBooksInCatalog∈BookCatalogWindow → ℙ(Titles)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="NoAuthor∈Authors">
+<org.eventb.core.prIdent name="Authors" org.eventb.core.type="ℙ(Authors)"/>
+<org.eventb.core.prIdent name="NoAuthor" org.eventb.core.type="Authors"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog)∉TitlesOfBooksInCatalog(bookCatalog)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="EmptySelectedBook∈SelectedBookWindow">
+<org.eventb.core.prIdent name="EmptySelectedBook" org.eventb.core.type="SelectedBookWindow"/>
+<org.eventb.core.prIdent name="SelectedBookWindow" org.eventb.core.type="ℙ(SelectedBookWindow)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="updatedBookCatalog∈dom(TitlesOfBooksInCatalog)∧TitlesOfBooksInCatalog∈BookCatalogWindow ⇸ ℙ(Titles)∧bookDialog∈dom(TitleOfEnteredBook)∧TitleOfEnteredBook∈BookEntryDialog ⇸ Titles∧bookCatalog∈dom(TitlesOfBooksInCatalog)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="NoCoverImage∈CoverImages">
+<org.eventb.core.prIdent name="CoverImages" org.eventb.core.type="ℙ(CoverImages)"/>
+<org.eventb.core.prIdent name="NoCoverImage" org.eventb.core.type="CoverImages"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="TitlesOfBooksInCatalog∈BookCatalogWindow ⇸ ℙ(Titles)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="catalogBeingDisplayed∈ActiveCatalog">
 <org.eventb.core.prIdent name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
 <org.eventb.core.prIdent name="catalogBeingDisplayed" org.eventb.core.type="ActiveCatalog"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="DisplayedTitles∈BookCatalogWindow ⇸ ℙ(Titles)"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="bookCatalog∈dom(DisplayedTitles)"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog">
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="BlankBookEntryDialog∈BookEntryDialog">
 <org.eventb.core.prIdent name="BlankBookEntryDialog" org.eventb.core.type="BookEntryDialog"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="BookCatalogWindow"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
-<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/SelectedBookInitiallyEmpty/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="SelectedBookWindow">
 <org.eventb.core.lang name="L"/>

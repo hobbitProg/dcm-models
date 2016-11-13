@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Titles"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="BookCatalogs"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="EmptyBookCatalog"/>
+<org.eventb.core.axiom name="*" org.eventb.core.label="EmptyBookCatalogIsABookCatalog" org.eventb.core.predicate="EmptyBookCatalog ∈ BookCatalogs"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="DefinedTitles"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="DefinedTitlesReferesTitlesOfBooksWithinCatalog" org.eventb.core.predicate="DefinedTitles ∈ BookCatalogs → ℙ(Titles)"/>
+</org.eventb.core.contextFile>

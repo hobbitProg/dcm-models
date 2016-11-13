@@ -24,8 +24,8 @@
 <org.eventb.core.axiom name="Q" org.eventb.core.label="NoDescriptionIsADescription" org.eventb.core.predicate="NoDescription ∈ Descriptions"/>
 <org.eventb.core.axiom name="V" org.eventb.core.label="NoCoverImageIsACoverImage" org.eventb.core.predicate="NoCoverImage ∈ CoverImages"/>
 <org.eventb.core.axiom name="1" org.eventb.core.label="BlankBookEntryDialog" org.eventb.core.predicate="BlankBookEntryDialog ∈ BookEntryDialog"/>
-<org.eventb.core.constant name="3" org.eventb.core.identifier="DisplayedTitles"/>
-<org.eventb.core.axiom name="4" org.eventb.core.label="DisplayedTitlesQAreOnBookCatalogWindow" org.eventb.core.predicate="DisplayedTitles ∈ BookCatalogWindow → ℙ(Titles)" org.eventb.core.theorem="true"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="TitlesOfBooksInCatalog"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="TitlesOfBooksInCatalogsAreOnBookCatalogWindow" org.eventb.core.predicate="TitlesOfBooksInCatalog ∈ BookCatalogWindow → ℙ(Titles)" org.eventb.core.theorem="true"/>
 <org.eventb.core.axiom name="5" org.eventb.core.label="BookEntryDialogDataIsPredicateOnBookEntryDialog" org.eventb.core.predicate="BookEntryDialogContainsValidData ∈ BookEntryDialog → BOOL"/>
 <org.eventb.core.constant name="6" org.eventb.core.identifier="BookEntryDialogContainsValidData"/>
 <org.eventb.core.constant name="7" org.eventb.core.identifier="TitleOfEnteredBook"/>
