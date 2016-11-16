@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="*" org.eventb.core.identifier="Titles"/>
+<org.eventb.core.carrierSet name="0" org.eventb.core.identifier="Authors"/>
+<org.eventb.core.carrierSet name="6" org.eventb.core.identifier="ISBNs"/>
+<org.eventb.core.carrierSet name="=" org.eventb.core.identifier="Descriptions"/>
+<org.eventb.core.carrierSet name="C" org.eventb.core.identifier="CoverImages"/>
+<org.eventb.core.carrierSet name="I" org.eventb.core.identifier="Categories"/>
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Books"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="NoTitle"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="NoTitleIsATitle" org.eventb.core.predicate="NoTitle ∈ Titles"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="NoAuthorIsAnAuthor" org.eventb.core.predicate="NoAuthor ∈ Authors"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="NoISBNIsAnISBN" org.eventb.core.predicate="NoISBN ∈ ISBNs"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="NoDescriptionIsADescription" org.eventb.core.predicate="NoDescription ∈ Descriptions"/>
+<org.eventb.core.axiom name="E" org.eventb.core.label="NoCoveerImageIsACoverImage" org.eventb.core.predicate="NoCoverImage ∈ CoverImages"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="BookTitleExtractsTitleFromBook" org.eventb.core.predicate="BookTitle ∈ Books → Titles"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="BookAuthorIsExtractsAuthorFromBook" org.eventb.core.predicate="BookAuthor ∈ Books → Authors"/>
+<org.eventb.core.axiom name=":" org.eventb.core.label="BookISBNExtractsISBNFromABook" org.eventb.core.predicate="BookISBN ∈ Books → ISBNs"/>
+<org.eventb.core.axiom name="A" org.eventb.core.label="BookDescriptionExtractsDescriptionFromBook" org.eventb.core.predicate="BookDescription ∈ Books → Descriptions"/>
+<org.eventb.core.axiom name="G" org.eventb.core.label="BookCoverExtractsCoverImageFromBook" org.eventb.core.predicate="BookCover ∈ Books → CoverImages"/>
+<org.eventb.core.axiom name="K" org.eventb.core.label="BookCategoriesExtractsCategoriesAssociatedWithABook" org.eventb.core.predicate="BookCategories ∈ Books → ℙ(Categories)"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="EmptyBookIsABook" org.eventb.core.predicate="EmptyBook ∈ Books"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="EmptyBookHasNoTitle" org.eventb.core.predicate="BookTitle(EmptyBook) = NoTitle"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="EmptyBookHasNoAuthor" org.eventb.core.predicate="BookAuthor(EmptyBook) = NoAuthor"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="NoAuthor"/>
+<org.eventb.core.constant name="7" org.eventb.core.identifier="NoISBN"/>
+<org.eventb.core.constant name="&gt;" org.eventb.core.identifier="NoDescription"/>
+<org.eventb.core.constant name="D" org.eventb.core.identifier="NoCoverImage"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="BookTitle"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="BookAuthor"/>
+<org.eventb.core.constant name="9" org.eventb.core.identifier="BookISBN"/>
+<org.eventb.core.constant name="@" org.eventb.core.identifier="BookDescription"/>
+<org.eventb.core.constant name="F" org.eventb.core.identifier="BookCover"/>
+<org.eventb.core.constant name="J" org.eventb.core.identifier="BookCategories"/>
+<org.eventb.core.constant name="(" org.eventb.core.identifier="EmptyBook"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="EmptyBookHasNoISBN" org.eventb.core.predicate="BookISBN(EmptyBook) = NoISBN"/>
+<org.eventb.core.axiom name="B" org.eventb.core.label="EmptyBookHasNoDescription" org.eventb.core.predicate="BookDescription(EmptyBook) = NoDescription"/>
+<org.eventb.core.axiom name="H" org.eventb.core.label="EmptyBookHasNoCover" org.eventb.core.predicate="BookCover(EmptyBook) = NoCoverImage"/>
+<org.eventb.core.axiom name="L" org.eventb.core.label="EmptyBookContainsNoCategories" org.eventb.core.predicate="BookCategories(EmptyBook) = ∅"/>
+<org.eventb.core.carrierSet name="M" org.eventb.core.identifier="BookCatalogs"/>
+<org.eventb.core.constant name="N" org.eventb.core.identifier="EmptyBookCatalog"/>
+<org.eventb.core.axiom name="O" org.eventb.core.label="EmptyBookCatalogIsABookCatalog" org.eventb.core.predicate="EmptyBookCatalog ∈ BookCatalogs"/>
+<org.eventb.core.constant name="P" org.eventb.core.identifier="DefinedBooks"/>
+<org.eventb.core.axiom name="Q" org.eventb.core.label="DefinedBooksExtractsBooksFromCatalog" org.eventb.core.predicate="DefinedBooks ∈ BookCatalogs → ℙ(Books)"/>
+<org.eventb.core.axiom name="R" org.eventb.core.label="EmptyBookCatalogHasNoBooks" org.eventb.core.predicate="DefinedBooks(EmptyBookCatalog) = ∅"/>
+<org.eventb.core.constant name="S" org.eventb.core.identifier="AddBook"/>
+<org.eventb.core.axiom name="T" org.eventb.core.label="AddBookPlacesBookIntoCatalog" org.eventb.core.predicate="AddBook ∈ BookCatalogs × Books ⇸ BookCatalogs"/>
+<org.eventb.core.axiom name="U" org.eventb.core.label="BooksAlreadyInCatalogCannotBeAddedToCatalog" org.eventb.core.predicate="∀ catalog, existingBook · existingBook ∈ DefinedBooks(catalog) ⇒ catalog ↦ existingBook ∉ dom(AddBook)"/>
+<org.eventb.core.axiom name="W" org.eventb.core.label="BooksNotInCatalogCanBeAddedToCatalog" org.eventb.core.predicate="∀ catalog, newBook · newBook ∉ DefinedBooks(catalog) ⇒ catalog ↦ newBook ∈ dom(AddBook)"/>
+<org.eventb.core.axiom name="V" org.eventb.core.label="BookIsPlacedIntoCatalogWhenAdded" org.eventb.core.predicate="∀catalog, newBook · catalog ↦ newBook ∈ dom(AddBook) ⇒ DefinedBooks(AddBook(catalog ↦ newBook)) = DefinedBooks(catalog) ∪ {newBook}"/>
+</org.eventb.core.contextFile>

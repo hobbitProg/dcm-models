@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="bookBeingEdited ≔ EmptyBook" org.eventb.core.label="BookBeingEditedIsInitiallyEmpty"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="catalogBeingUpdated :∈ BookCatalogs" org.eventb.core.label="InitiallyCatalogNotConcretelyDetermined"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="BookEntryContext-WithDefinedCategories"/>
+<org.eventb.core.refinesMachine name=")" org.eventb.core.target="BookEntryDialog"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="bookBeingEdited"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="catalogBeingUpdated"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="CatalogBeingUpdatedIsABookCatalog" org.eventb.core.predicate="catalogBeingUpdated ∈ BookCatalogs"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="BookBeingEditedIsABook" org.eventb.core.predicate="bookBeingEdited ∈ Books"/>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddTitle">
+<org.eventb.core.refinesEvent name="2" org.eventb.core.target="AddTitle"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddAuthor">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddAuthor"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddISBN">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddISBN"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddDescription">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddDescription"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddCoverImage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddCoverImage"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddCategories">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddCategories"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="NewCategoriesAreDefined" org.eventb.core.predicate="newCategories ⊆ DefinedCategories"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddBook">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddBook"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

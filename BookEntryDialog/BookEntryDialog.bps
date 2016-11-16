@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/InitiallyCatalogNotConcretelyDetermined/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddTitle/UpdatedBookContainsNewTitle/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddTitle/UpdatedBookContainsSameAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddTitle/UpdatedBookContainsSameISBN/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddTitle/UpdatedBookContainsSameDescription/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddTitle/UpdatedBookContainsSameCover/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddTitle/UpdatedBookContainsSameCategories/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddAuthor/TitleOfUpdatedBookHasNotChanged/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddAuthor/AuthorOfUpdatedBookChanged/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddAuthor/ISBNOfUpdatedBookNotChanged/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddAuthor/DescriptionOfUpdatedBookNotChanged/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddAuthor/CoverOfUpdatedBookNotChanged/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddAuthor/CategoriesOfUpdatedBookNotChanged/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddISBN/UpdatedBookContainsSameTitle/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddISBN/UpdatedBookContainsSameAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddISBN/UpdatedBookContainsNewISBN/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddISBN/UpdatedBookContainsSameDescription/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddISBN/UpdatedBookContainsSameCover/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddISBN/UpdatedBookContainsSameCategories/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddDescription/UpdatedBookHasSameTitle/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddDescription/UpdatedBookHasSameAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddDescription/UpdatedBookHasSaveISBN/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddDescription/UpdatedBookContainsNewDescription/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddDescription/UpdatedBookContainsSameCover/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddDescription/UpdatedBookContainsSameCategories/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCoverImage/UpdatedBookHasSameTitle/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCoverImage/UpdatedBookHasSameAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCoverImage/UpdatedBookHasSameISBN/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCoverImage/UpdatedBookHasSameDescription/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCoverImage/UpdatedBookHasNewCover/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCoverImage/UpdatedBookHasSameCategories/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameTilte/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameISBN/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameDescription/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameCover/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddCategories/UpdatedBookHasNewCategories/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddBook/BookBeingEditedIsNotInCatalog/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="AddBook/BookBeingEditedIsPlacedIntoCatalog/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="52" org.eventb.core.psManual="true"/>
+</org.eventb.core.psFile>

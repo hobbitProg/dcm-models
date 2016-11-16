@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="bookBeingEdited ≔ EmptyBook" org.eventb.core.label="BookBeingEditedIsInitiallyEmpty"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="catalogBeingUpdated :∈ BookCatalogs" org.eventb.core.label="InitiallyCatalogNotConcretelyDetermined"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="BookEntryContext"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="bookBeingEdited"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="BookBeingEditedIsABook" org.eventb.core.predicate="bookBeingEdited ∈ Books"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="catalogBeingUpdated"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="CatalogBeingUpdatedIsABookCatalog" org.eventb.core.predicate="catalogBeingUpdated ∈ BookCatalogs"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddTitle">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newTitle"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedBookBeingEdited"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewTitleIsATitle" org.eventb.core.predicate="newTitle ∈ Titles"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="UpdatedBookIsABook" org.eventb.core.predicate="updatedBookBeingEdited ∈ Books"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="UpdatedBookContainsNewTitle" org.eventb.core.predicate="BookTitle(updatedBookBeingEdited) = newTitle"/>
+<org.eventb.core.guard name="," org.eventb.core.label="UpdatedBookContainsSameAuthor" org.eventb.core.predicate="BookAuthor(updatedBookBeingEdited) = BookAuthor(bookBeingEdited)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookContainsSameISBN" org.eventb.core.predicate="BookISBN(updatedBookBeingEdited) = BookISBN(bookBeingEdited)"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="UpdatedBookContainsSameDescription" org.eventb.core.predicate="BookDescription(updatedBookBeingEdited) = BookDescription(bookBeingEdited)"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookContainsSameCover" org.eventb.core.predicate="BookCover(updatedBookBeingEdited) = BookCover(bookBeingEdited)"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="UpdatedBookContainsSameCategories" org.eventb.core.predicate="BookCategories(updatedBookBeingEdited) = BookCategories(bookBeingEdited)"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="bookBeingEdited ≔ updatedBookBeingEdited" org.eventb.core.label="BookBeingEditedHasNewTitle"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddAuthor">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newAuthor"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedBookBeingEdited"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewAuthorIsAnAuthor" org.eventb.core.predicate="newAuthor ∈ Authors"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="UpdatedBookBeingEditedIsABook" org.eventb.core.predicate="updatedBookBeingEdited ∈ Books"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="TitleOfUpdatedBookHasNotChanged" org.eventb.core.predicate="BookTitle(updatedBookBeingEdited) = BookTitle(bookBeingEdited)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="AuthorOfUpdatedBookChanged" org.eventb.core.predicate="BookAuthor(updatedBookBeingEdited) = newAuthor"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="ISBNOfUpdatedBookNotChanged" org.eventb.core.predicate="BookISBN(updatedBookBeingEdited) = BookISBN(bookBeingEdited)"/>
+<org.eventb.core.guard name="." org.eventb.core.label="DescriptionOfUpdatedBookNotChanged" org.eventb.core.predicate="BookDescription(updatedBookBeingEdited) = BookDescription(bookBeingEdited)"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="CoverOfUpdatedBookNotChanged" org.eventb.core.predicate="BookCover(updatedBookBeingEdited) = BookCover(bookBeingEdited)"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="CategoriesOfUpdatedBookNotChanged" org.eventb.core.predicate="BookCategories(updatedBookBeingEdited) = BookCategories(bookBeingEdited)"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="bookBeingEdited ≔ updatedBookBeingEdited" org.eventb.core.label="BookBeingEditedIsUpdated"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddISBN">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newISBN"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedBookBeingEdited"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewISBNIsAnISBN" org.eventb.core.predicate="newISBN ∈ ISBNs"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="updatedBookBeingEdited" org.eventb.core.predicate="updatedBookBeingEdited ∈ Books"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="UpdatedBookContainsSameTitle" org.eventb.core.predicate="BookTitle(updatedBookBeingEdited) = BookTitle(bookBeingEdited)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="UpdatedBookContainsSameAuthor" org.eventb.core.predicate="BookAuthor(updatedBookBeingEdited) = BookAuthor(bookBeingEdited)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookContainsNewISBN" org.eventb.core.predicate="BookISBN(updatedBookBeingEdited) = newISBN"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookContainsSameDescription" org.eventb.core.predicate="BookDescription(updatedBookBeingEdited) = BookDescription(bookBeingEdited)"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="UpdatedBookContainsSameCover" org.eventb.core.predicate="BookCover(updatedBookBeingEdited) = BookCover(bookBeingEdited)"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="UpdatedBookContainsSameCategories" org.eventb.core.predicate="BookCategories(updatedBookBeingEdited) = BookCategories(bookBeingEdited)"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="bookBeingEdited ≔ updatedBookBeingEdited" org.eventb.core.label="BookBeingEditedIsUpdated"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddDescription">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newDescription"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedBookBeingEdited"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewDescriptionIsADescription" org.eventb.core.predicate="newDescription ∈ Descriptions"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="UpdatedBookBeingEditedIsABook" org.eventb.core.predicate="updatedBookBeingEdited ∈ Books"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="UpdatedBookHasSameTitle" org.eventb.core.predicate="BookTitle(updatedBookBeingEdited) = BookTitle(bookBeingEdited)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="UpdatedBookHasSameAuthor" org.eventb.core.predicate="BookAuthor(updatedBookBeingEdited) = BookAuthor(bookBeingEdited)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookHasSaveISBN" org.eventb.core.predicate="BookISBN(updatedBookBeingEdited) = BookISBN(bookBeingEdited)"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookContainsNewDescription" org.eventb.core.predicate="BookDescription(updatedBookBeingEdited) = newDescription"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="UpdatedBookContainsSameCover" org.eventb.core.predicate="BookCover(updatedBookBeingEdited) = BookCover(bookBeingEdited)"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="UpdatedBookContainsSameCategories" org.eventb.core.predicate="BookCategories(updatedBookBeingEdited) = BookCategories(bookBeingEdited)"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="bookBeingEdited ≔ updatedBookBeingEdited" org.eventb.core.label="BookBeingEditedIsUpdated"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddCoverImage">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newCover"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedBookBeingEdited"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewCoverIsACoverImage" org.eventb.core.predicate="newCover ∈ CoverImages"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="UpdatedBookBeingEditedIsABook" org.eventb.core.predicate="updatedBookBeingEdited ∈ Books"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="UpdatedBookHasSameTitle" org.eventb.core.predicate="BookTitle(updatedBookBeingEdited) = BookTitle(bookBeingEdited)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="UpdatedBookHasSameAuthor" org.eventb.core.predicate="BookAuthor(updatedBookBeingEdited) = BookAuthor(bookBeingEdited)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookHasSameISBN" org.eventb.core.predicate="BookISBN(updatedBookBeingEdited) = BookISBN(bookBeingEdited)"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookHasSameDescription" org.eventb.core.predicate="BookDescription(updatedBookBeingEdited) = BookDescription(bookBeingEdited)"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="UpdatedBookHasNewCover" org.eventb.core.predicate="BookCover(updatedBookBeingEdited) = newCover"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="UpdatedBookHasSameCategories" org.eventb.core.predicate="BookCategories(updatedBookBeingEdited) = BookCategories(bookBeingEdited)"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="bookBeingEdited ≔ updatedBookBeingEdited" org.eventb.core.label="BookBeingEditedWasUpdated"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddCategories">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newCategories"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedBookBeingEdited"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewCategoriesIsACollectionOfCategories" org.eventb.core.predicate="newCategories ∈ ℙ(Categories)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="UpdatedBookBeingEditedIsABook" org.eventb.core.predicate="updatedBookBeingEdited ∈ Books"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="UpdatedBookHasSameTilte" org.eventb.core.predicate="BookTitle(updatedBookBeingEdited) = BookTitle(bookBeingEdited)"/>
+<org.eventb.core.guard name="," org.eventb.core.label="UpdatedBookHasSameAuthor" org.eventb.core.predicate="BookAuthor(updatedBookBeingEdited) = BookAuthor(bookBeingEdited)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookHasSameISBN" org.eventb.core.predicate="BookISBN(updatedBookBeingEdited) = BookISBN(bookBeingEdited)"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookHasSameDescription" org.eventb.core.predicate="BookDescription(updatedBookBeingEdited) = BookDescription(bookBeingEdited)"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="UpdatedBookHasSameCover" org.eventb.core.predicate="BookCover(updatedBookBeingEdited) = BookCover(bookBeingEdited)"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="UpdatedBookHasNewCategories" org.eventb.core.predicate="BookCategories(updatedBookBeingEdited) = newCategories"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="bookBeingEdited ≔ updatedBookBeingEdited" org.eventb.core.label="BookBeingEditedHasBeenUpdated"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddBook">
+<org.eventb.core.guard name="'" org.eventb.core.label="BookBeingEditedIsNotInCatalog" org.eventb.core.predicate="bookBeingEdited ∉ DefinedBooks(catalogBeingUpdated)"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="catalogBeingUpdated ≔ AddBook(catalogBeingUpdated ↦ bookBeingEdited)" org.eventb.core.label="BookBeingEditedIsPlacedIntoCatalog"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
