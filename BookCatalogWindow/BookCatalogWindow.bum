@@ -9,8 +9,8 @@
 <org.eventb.core.seesContext name="*" org.eventb.core.target="BookCatalogWindowContext"/>
 <org.eventb.core.variable name="+" org.eventb.core.identifier="sourceCatalog"/>
 <org.eventb.core.invariant name="," org.eventb.core.label="SourceCatalogIsABookCatalog" org.eventb.core.predicate="sourceCatalog ∈ BookCatalogs"/>
-<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UpdateTitlesOfBooksInCatalog">
-<org.eventb.core.guard name="'" org.eventb.core.label="TitlesOfBooksWithinCatalogHaveBeenUpdated" org.eventb.core.predicate="DefinedTitles(sourceCatalog) ≠ titlesOfBooksInCatalog"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="BookAddedToCatalog">
+<org.eventb.core.guard name="'" org.eventb.core.label="TitlesOfBooksWithinCatalogHaveBeenUpdated" org.eventb.core.predicate="∃ newTitle · DefinedTitles(sourceCatalog) = titlesOfBooksInCatalog ∪ {newTitle}"/>
 <org.eventb.core.action name="(" org.eventb.core.assignment="titlesOfBooksInCatalog ≔ DefinedTitles(sourceCatalog)" org.eventb.core.label="UpdatedTitlesWithinCatalogAreNowDisplayed"/>
 </org.eventb.core.event>
 </org.eventb.core.machineFile>

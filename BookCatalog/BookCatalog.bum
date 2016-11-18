@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="addListeners ≔ ∅" org.eventb.core.label="InitiallyThereAreNoAddListeners"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="definedBooks ≔ ∅" org.eventb.core.label="InitiallyNoBooksAreDefined"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="BookCatalogContext"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="addListeners"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="AddListenersIsASetOfListeners" org.eventb.core.predicate="addListeners ∈ ℙ(Listeners)"/>
+<org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddBook">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="newBook"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="updatedListeners"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="NewBookIsABook" org.eventb.core.predicate="newBook ∈ Books"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="NewBookIsNotDefined" org.eventb.core.predicate="newBook ∉ definedBooks"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="UpdatedListenersIsACollectionOfListeners" org.eventb.core.predicate="updatedListeners ∈ ℙ(Listeners)"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="EachUpdatedListenerIsDerivedFromAnAddListener" org.eventb.core.predicate="∀ updatedListener · updatedListener ∈ updatedListeners ⇒ (∃ addListener · addListener ∈ addListeners ∧ updatedListener = Run(addListener ↦ newBook))"/>
+<org.eventb.core.guard name="," org.eventb.core.label="EachAddListenerHasADerivedListener" org.eventb.core.predicate="∀ addListener · addListener ∈ addListeners ⇒ (∃ updatedListener · updatedListener ∈ updatedListeners ∧ updatedListener = Run(addListener ↦ newBook))"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="addListeners ≔ updatedListeners" org.eventb.core.label="AddListenersIsUpdated"/>
+<org.eventb.core.guard name="." org.eventb.core.label="UdatedBooksIsACollectionOfBooks" org.eventb.core.predicate="updatedBooks ∈ ℙ(Books)"/>
+<org.eventb.core.parameter name="/" org.eventb.core.identifier="updatedBooks"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="UpdatedBooksIsOriginalBooksWithNewBook" org.eventb.core.predicate="updatedBooks = definedBooks ∪ {newBook}"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="definedBooks ≔ updatedBooks" org.eventb.core.label="DefinedBooksAreUpdated"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="," org.eventb.core.identifier="definedBooks"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="DefinedBooksIsACollectionOfBooks" org.eventb.core.predicate="definedBooks ∈ ℙ(Books)"/>
+</org.eventb.core.machineFile>
