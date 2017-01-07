@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
 <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Listeners"/>
+<org.eventb.core.carrierSet name="+" org.eventb.core.identifier="Titles"/>
 <org.eventb.core.carrierSet name="(" org.eventb.core.identifier="Books"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="NoTitle"/>
+<org.eventb.core.constant name="." org.eventb.core.identifier="BookTitle"/>
 <org.eventb.core.constant name=")" org.eventb.core.identifier="Run"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="NoTitleIsATitle" org.eventb.core.predicate="NoTitle ∈ Titles"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="BookTitleIsTitle" org.eventb.core.predicate="BookTitle ∈ Books → Titles"/>
 <org.eventb.core.axiom name="*" org.eventb.core.label="RunPerformsActionOnListenerGivenBook" org.eventb.core.predicate="Run ∈ Listeners × Books → Listeners"/>
 </org.eventb.core.contextFile>

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
 <org.eventb.core.poIdentifier name="Books" org.eventb.core.type="ℙ(Books)"/>
 <org.eventb.core.poIdentifier name="Listeners" org.eventb.core.type="ℙ(Listeners)"/>
+<org.eventb.core.poIdentifier name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+<org.eventb.core.poIdentifier name="BookTitle" org.eventb.core.type="ℙ(Books×Titles)"/>
+<org.eventb.core.poIdentifier name="NoTitle" org.eventb.core.type="Titles"/>
 <org.eventb.core.poIdentifier name="Run" org.eventb.core.type="ℙ(Listeners×Books×Listeners)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalogContext.bpo|org.eventb.core.poFile#BookCatalogContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Run∈Listeners × Books → Listeners" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalogContext.bpo|org.eventb.core.poFile#BookCatalogContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NoTitle∈Titles" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="BookTitle∈Books → Titles" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Run∈Listeners × Books → Listeners" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#*"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

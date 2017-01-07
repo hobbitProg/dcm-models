@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
-<org.eventb.core.scAxiom name="'" org.eventb.core.label="RunPerformsActionOnListenerGivenBook" org.eventb.core.predicate="Run∈Listeners × Books → Listeners" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="NoTitleIsATitle" org.eventb.core.predicate="NoTitle∈Titles" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="BookTitleIsTitle" org.eventb.core.predicate="BookTitle∈Books → Titles" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="RunPerformsActionOnListenerGivenBook" org.eventb.core.predicate="Run∈Listeners × Books → Listeners" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="BookTitle" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.constant#." org.eventb.core.type="ℙ(Books×Titles)"/>
 <org.eventb.core.scCarrierSet name="Books" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(Books)"/>
 <org.eventb.core.scCarrierSet name="Listeners" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Listeners)"/>
+<org.eventb.core.scConstant name="NoTitle" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.constant#," org.eventb.core.type="Titles"/>
 <org.eventb.core.scConstant name="Run" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.constant#)" org.eventb.core.type="ℙ(Listeners×Books×Listeners)"/>
+<org.eventb.core.scCarrierSet name="Titles" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.carrierSet#+" org.eventb.core.type="ℙ(Titles)"/>
 </org.eventb.core.scContextFile>
