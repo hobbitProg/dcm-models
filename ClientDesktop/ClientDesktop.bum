@@ -23,8 +23,8 @@
 <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CommitNewBook">
 <org.eventb.core.guard name="'" org.eventb.core.label="BookCurrentlyBeingEdited" org.eventb.core.predicate="bookIsBeingEdited = TRUE"/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="bookIsBeingEdited ≔ FALSE" org.eventb.core.label="BookNoLongerBeingEdited"/>
-<org.eventb.core.guard name="+" org.eventb.core.label="NewBookHasNewTitle" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog) ∉ TitlesOfBooksInCatalog(bookCatalog)"/>
 <org.eventb.core.parameter name="," org.eventb.core.identifier="updatedBookCatalog"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="BookHasTitle" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog) ≠ NoTitle"/>
 <org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookCatalogIsBookCatalogWindow" org.eventb.core.predicate="updatedBookCatalog ∈ BookCatalogWindow"/>
 <org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookCatalogContainsNewBookAndOriginalBooks" org.eventb.core.predicate="TitlesOfBooksInCatalog(updatedBookCatalog) = {TitleOfEnteredBook(bookDialog)} ∪ TitlesOfBooksInCatalog(bookCatalog)"/>
 <org.eventb.core.action name="/" org.eventb.core.assignment="bookCatalog ≔ updatedBookCatalog" org.eventb.core.label="BookCatalogWasUpdated"/>

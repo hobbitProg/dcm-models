@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="12">
-<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="Books" org.eventb.core.type="ℙ(Books)"/>
 <org.eventb.core.poIdentifier name="Listeners" org.eventb.core.type="ℙ(Listeners)"/>
 <org.eventb.core.poIdentifier name="Run" org.eventb.core.type="ℙ(Listeners×Books×Listeners)"/>
 <org.eventb.core.poPredicate name="Listenert" org.eventb.core.predicate="Run∈Listeners × Books → Listeners" org.eventb.core.source="/BookCatalog/BookCatalogContext.buc|org.eventb.core.contextFile#BookCatalogContext|org.eventb.core.axiom#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="addListeners" org.eventb.core.type="ℙ(Listeners)"/>
 <org.eventb.core.poIdentifier name="definedBooks" org.eventb.core.type="ℙ(Books)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTIDENTBookCatalogContexw" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="EVTIDENTBookCatalogContexw" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="addListeners'" org.eventb.core.type="ℙ(Listeners)"/>
 <org.eventb.core.poIdentifier name="definedBooks'" org.eventb.core.type="ℙ(Books)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPBookCatalogContexw" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogContexw" org.eventb.core.poStamp="7"/>
-<org.eventb.core.poSequent name="AddBook/EachUpdatedListenerIsDerivedFromAnAddListener/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="EVTALLHYPBookCatalogContexw" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogContexw" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="AddBook/EachUpdatedListenerIsDerivedFromAnAddListener/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀updatedListener⦂Listeners·updatedListener∈updatedListeners⇒(∀addListener⦂Listeners·addListener∈addListeners⇒addListener ↦ newBook∈dom(Run)∧Run∈Listeners × Books ⇸ Listeners)" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#+"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#+"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="AddBook/EachAddListenerHasADerivedListener/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="12">
+<org.eventb.core.poSequent name="AddBook/EachAddListenerHasADerivedListener/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀addListener⦂Listeners·addListener∈addListeners⇒(∀updatedListener⦂Listeners·updatedListener∈updatedListeners⇒addListener ↦ newBook∈dom(Run)∧Run∈Listeners × Books ⇸ Listeners)" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#,"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#,"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx*"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTBookCatalogContexx" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="EVTIDENTBookCatalogContexx" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="addListeners'" org.eventb.core.type="ℙ(Listeners)"/>
 <org.eventb.core.poIdentifier name="newBook" org.eventb.core.type="Books"/>
 <org.eventb.core.poIdentifier name="updatedBooks" org.eventb.core.type="ℙ(Books)"/>
 <org.eventb.core.poIdentifier name="definedBooks'" org.eventb.core.type="ℙ(Books)"/>
 <org.eventb.core.poIdentifier name="updatedListeners" org.eventb.core.type="ℙ(Listeners)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPBookCatalogContexx)" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogContexx" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="EVTHYPBookCatalogContexx)" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogContexx" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="newBook∈Books" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="newBook∉definedBooks" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#1"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="updatedListeners∈ℙ(Listeners)" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPBookCatalogContexx*" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx)" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="EVTHYPBookCatalogContexx*" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx)" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀updatedListener⦂Listeners·updatedListener∈updatedListeners⇒(∃addListener⦂Listeners·addListener∈addListeners∧updatedListener=Run(addListener ↦ newBook))" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#+"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPBookCatalogContexx" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx*" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="EVTALLHYPBookCatalogContexx" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#EVTHYPBookCatalogContexx*" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀addListener⦂Listeners·addListener∈addListeners⇒(∃updatedListener⦂Listeners·updatedListener∈updatedListeners∧updatedListener=Run(addListener ↦ newBook))" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#,"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="updatedBooks∈ℙ(Books)" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#."/>
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="updatedBooks=definedBooks∪{newBook}" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.event#+|org.eventb.core.guard#0"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="7">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookCatalog/BookCatalog.bpo|org.eventb.core.poFile#BookCatalog|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="addListeners∈ℙ(Listeners)" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.invariant#*"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="definedBooks∈ℙ(Books)" org.eventb.core.source="/BookCatalog/BookCatalog.bum|org.eventb.core.machineFile#BookCatalog|org.eventb.core.invariant#-"/>
 </org.eventb.core.poPredicateSet>

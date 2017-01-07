@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="BookCatalogs" org.eventb.core.type="ℙ(BookCatalogs)"/>
+<org.eventb.core.poIdentifier name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+<org.eventb.core.poIdentifier name="DefinedTitles" org.eventb.core.type="ℙ(BookCatalogs×ℙ(Titles))"/>
+<org.eventb.core.poIdentifier name="EmptyBookCatalog" org.eventb.core.type="BookCatalogs"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloh" org.eventb.core.predicate="EmptyBookCatalog∈BookCatalogs" org.eventb.core.source="/BookCatalogControl/BookCatalogControlContext.buc|org.eventb.core.contextFile#BookCatalogControlContext|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloi" org.eventb.core.predicate="DefinedTitles∈BookCatalogs → ℙ(Titles)" org.eventb.core.source="/BookCatalogControl/BookCatalogControlContext.buc|org.eventb.core.contextFile#BookCatalogControlContext|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="sourceCatalog" org.eventb.core.type="BookCatalogs"/>
+<org.eventb.core.poIdentifier name="titlesOfBooksInCatalog" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTBookCatalogControlContexw" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="sourceCatalog'" org.eventb.core.type="BookCatalogs"/>
+<org.eventb.core.poIdentifier name="titlesOfBooksInCatalog'" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPBookCatalogControlContexw" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogControlContexw" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="BookAddedToCatalog/TitlesOfBooksWithinCatalogHaveBeenUpdated/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogControlContexx"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sourceCatalog∈dom(DefinedTitles)∧DefinedTitles∈BookCatalogs ⇸ ℙ(Titles)" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogControlContexx"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="BookAddedToCatalog/UpdatedTitlesWithinCatalogAreNowDisplayed/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#EVTALLHYPBookCatalogControlContexx"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sourceCatalog∈dom(DefinedTitles)∧DefinedTitles∈BookCatalogs ⇸ ℙ(Titles)" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.event#-|org.eventb.core.action#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.event#-|org.eventb.core.action#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#EVTALLHYPBookCatalogControlContexx"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTBookCatalogControlContexx" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="titlesOfBooksInCatalog'" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPBookCatalogControlContexx" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#EVTIDENTBookCatalogControlContexx" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃newTitle⦂Titles·DefinedTitles(sourceCatalog)=titlesOfBooksInCatalog∪{newTitle}" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookCatalogControl/BookCatalogControl.bpo|org.eventb.core.poFile#BookCatalogControl|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="titlesOfBooksInCatalog∈ℙ(Titles)" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.invariant#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sourceCatalog∈BookCatalogs" org.eventb.core.source="/BookCatalogControl/BookCatalogControl.bum|org.eventb.core.machineFile#BookCatalogControl|org.eventb.core.invariant#,"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

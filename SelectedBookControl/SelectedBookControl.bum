@@ -8,7 +8,7 @@
 <org.eventb.core.action name="+" org.eventb.core.assignment="selectedBookCover ≔ NoCoverImage" org.eventb.core.label="InitiallyNoCoverIsSelected"/>
 <org.eventb.core.action name="," org.eventb.core.assignment="selectedBookCategories ≔ ∅" org.eventb.core.label="InitiallyNoCategoriesAreSelected"/>
 </org.eventb.core.event>
-<org.eventb.core.seesContext name="(" org.eventb.core.target="SelectedBookWindowContext"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="SelectedBookControlContext"/>
 <org.eventb.core.variable name=")" org.eventb.core.identifier="selectedBookTitle"/>
 <org.eventb.core.invariant name="*" org.eventb.core.label="SelectedBookTitleIsATitle" org.eventb.core.predicate="selectedBookTitle ∈ Titles"/>
 <org.eventb.core.variable name="+" org.eventb.core.identifier="selectedBookAuthor"/>
