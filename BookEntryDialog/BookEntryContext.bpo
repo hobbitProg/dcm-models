@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="33">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="26">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
 <org.eventb.core.poIdentifier name="BookCatalogs" org.eventb.core.type="ℙ(BookCatalogs)"/>
 <org.eventb.core.poIdentifier name="Books" org.eventb.core.type="ℙ(Books)"/>
@@ -25,67 +25,67 @@
 <org.eventb.core.poIdentifier name="NoISBN" org.eventb.core.type="ISBNs"/>
 <org.eventb.core.poIdentifier name="NoTitle" org.eventb.core.type="Titles"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="EmptyBookHasNoTitle/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookHasNoTitle/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP2"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBook∈dom(BookTitle)∧BookTitle∈Books ⇸ Titles" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#\/"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#\/"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP2"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptyBookHasNoAuthor/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookHasNoAuthor/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP3"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBook∈dom(BookAuthor)∧BookAuthor∈Books ⇸ Authors" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#5"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptyBookHasNoISBN/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookHasNoISBN/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP4"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBook∈dom(BookISBN)∧BookISBN∈Books ⇸ ISBNs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#;"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP4"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptyBookHasNoDescription/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookHasNoDescription/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP5"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBook∈dom(BookDescription)∧BookDescription∈Books ⇸ Descriptions" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#B"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#B"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptyBookHasNoCover/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookHasNoCover/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP6"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBook∈dom(BookCover)∧BookCover∈Books ⇸ CoverImages" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#H"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#H"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptyBookContainsNoCategories/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookContainsNoCategories/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP7"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBook∈dom(BookCategories)∧BookCategories∈Books ⇸ ℙ(Categories)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#L"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#L"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP7"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptyBookCatalogHasNoBooks/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="32">
+<org.eventb.core.poSequent name="EmptyBookCatalogHasNoBooks/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP:"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptyBookCatalog∈dom(DefinedBooks)∧DefinedBooks∈BookCatalogs ⇸ ℙ(Books)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#R"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#R"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP:"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="BooksAlreadyInCatalogCannotBeAddedToCatalog/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="33">
+<org.eventb.core.poSequent name="BooksAlreadyInCatalogCannotBeAddedToCatalog/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP="/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀catalog⦂BookCatalogs·catalog∈dom(DefinedBooks)∧DefinedBooks∈BookCatalogs ⇸ ℙ(Books)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#U"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#U"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP="/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="BooksNotInCatalogCanBeAddedToCatalog/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="33">
+<org.eventb.core.poSequent name="BooksNotInCatalogCanBeAddedToCatalog/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP&gt;"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀catalog⦂BookCatalogs·catalog∈dom(DefinedBooks)∧DefinedBooks∈BookCatalogs ⇸ ℙ(Books)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#W"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#W"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP&gt;"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="BookIsPlacedIntoCatalogWhenAdded/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="33">
+<org.eventb.core.poSequent name="BookIsPlacedIntoCatalogWhenAdded/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP?"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀catalog⦂BookCatalogs,newBook⦂Books·catalog ↦ newBook∈dom(AddBook)⇒AddBook∈BookCatalogs × Books ⇸ BookCatalogs∧AddBook(catalog ↦ newBook)∈dom(DefinedBooks)∧DefinedBooks∈BookCatalogs ⇸ ℙ(Books)∧catalog∈dom(DefinedBooks)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#V"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP?"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="HYP2" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP2" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="NoTitle∈Titles" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#,"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NoAuthor∈Authors" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#2"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NoISBN∈ISBNs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#8"/>
@@ -99,22 +99,22 @@
 <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="BookCategories∈Books → ℙ(Categories)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#K"/>
 <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="EmptyBook∈Books" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP3" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP2" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP3" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP2" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="BookTitle(EmptyBook)=NoTitle" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#\/"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP4" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP3" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP4" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP3" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="BookAuthor(EmptyBook)=NoAuthor" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#5"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP5" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP4" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP5" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP4" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="BookISBN(EmptyBook)=NoISBN" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#;"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP6" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP5" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP6" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP5" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="BookDescription(EmptyBook)=NoDescription" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#B"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP7" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP6" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP7" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP6" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="BookCover(EmptyBook)=NoCoverImage" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#H"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP:" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP7" org.eventb.core.poStamp="26">
+<org.eventb.core.poPredicateSet name="HYP:" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP7" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="BookCategories(EmptyBook)=(∅ ⦂ ℙ(Categories))" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#L"/>
 <org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="EmptyBookCatalog∈BookCatalogs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#O"/>
 <org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="DefinedBooks∈BookCatalogs → ℙ(Books)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#Q"/>
@@ -123,13 +123,13 @@
 <org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="DefinedBooks(EmptyBookCatalog)=(∅ ⦂ ℙ(Books))" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#R"/>
 <org.eventb.core.poPredicate name="PRD21" org.eventb.core.predicate="AddBook∈BookCatalogs × Books ⇸ BookCatalogs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#T"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP&gt;" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP=" org.eventb.core.poStamp="33">
+<org.eventb.core.poPredicateSet name="HYP&gt;" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP=" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD22" org.eventb.core.predicate="∀catalog⦂BookCatalogs,existingBook⦂Books·existingBook∈DefinedBooks(catalog)⇒catalog ↦ existingBook∉dom(AddBook)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#U"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP?" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP&gt;" org.eventb.core.poStamp="33">
+<org.eventb.core.poPredicateSet name="HYP?" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP&gt;" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD23" org.eventb.core.predicate="∀catalog⦂BookCatalogs,newBook⦂Books·newBook∉DefinedBooks(catalog)⇒catalog ↦ newBook∈dom(AddBook)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#W"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP?" org.eventb.core.poStamp="33">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext.bpo|org.eventb.core.poFile#BookEntryContext|org.eventb.core.poPredicateSet#HYP?" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD24" org.eventb.core.predicate="∀catalog⦂BookCatalogs,newBook⦂Books·catalog ↦ newBook∈dom(AddBook)⇒DefinedBooks(AddBook(catalog ↦ newBook))=DefinedBooks(catalog)∪{newBook}" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#V"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

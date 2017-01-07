@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="21">
-<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
 <org.eventb.core.poIdentifier name="BookCatalogs" org.eventb.core.type="ℙ(BookCatalogs)"/>
 <org.eventb.core.poIdentifier name="Books" org.eventb.core.type="ℙ(Books)"/>
@@ -53,7 +53,7 @@
 <org.eventb.core.poPredicate name="DefinedCategoriet" org.eventb.core.predicate="DefinedCategories∈ℙ(Categories)" org.eventb.core.source="/BookEntryDialog/BookEntryContext-WithDefinedCategories.buc|org.eventb.core.contextFile#BookEntryContext-WithDefinedCategories|org.eventb.core.axiom#)"/>
 <org.eventb.core.poPredicate name="DefinedCategorieu" org.eventb.core.predicate="∀categoriesAssociatedWithBook⦂ℙ(Categories)·categoriesAssociatedWithBook∈ran(BookCategories)⇒categoriesAssociatedWithBook⊆DefinedCategories" org.eventb.core.source="/BookEntryDialog/BookEntryContext-WithDefinedCategories.buc|org.eventb.core.contextFile#BookEntryContext-WithDefinedCategories|org.eventb.core.axiom#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="bookBeingEdited" org.eventb.core.type="Books"/>
 <org.eventb.core.poIdentifier name="catalogBeingUpdated" org.eventb.core.type="BookCatalogs"/>
 <org.eventb.core.poPredicate name="catalogBeingUpdatee" org.eventb.core.predicate="bookBeingEdited∈Books" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.invariant#*"/>
@@ -158,10 +158,11 @@
 <org.eventb.core.poPredicateSet name="EVTIDENTBookEntryContext-WithDefinedCategorie}" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="catalogBeingUpdated'" org.eventb.core.type="BookCatalogs"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPBookEntryContext-WithDefinedCategorie}" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#EVTIDENTBookEntryContext-WithDefinedCategorie}" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="EVTALLHYPBookEntryContext-WithDefinedCategorie}" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#EVTIDENTBookEntryContext-WithDefinedCategorie}" org.eventb.core.poStamp="1">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookBeingEdited∉DefinedBooks(catalogBeingUpdated)" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="BookTitle(bookBeingEdited)≠NoTitle" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bpo|org.eventb.core.poFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="catalogBeingUpdated∈BookCatalogs" org.eventb.core.source="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bum|org.eventb.core.machineFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.invariant#,"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="bookBeingEdited∈Books" org.eventb.core.source="/BookEntryDialog/BookEntryDialog-LimitCategoriesToDefinedCategores.bum|org.eventb.core.machineFile#BookEntryDialog-LimitCategoriesToDefinedCategores|org.eventb.core.invariant#-"/>
 </org.eventb.core.poPredicateSet>
