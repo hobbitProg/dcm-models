@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
 <org.eventb.core.poIdentifier name="BookCatalogs" org.eventb.core.type="ℙ(BookCatalogs)"/>
@@ -455,7 +455,13 @@
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#)"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingUpdatel'"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="AddBook/BookBeingEditedIsPlacedIntoCatalog/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="1">
+<org.eventb.core.poSequent name="AddBook/NewBookHasAuthor/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingUpdatel("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="bookBeingEdited∈dom(BookAuthor)∧BookAuthor∈Books ⇸ Authors" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingUpdatel("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="AddBook/BookBeingEditedIsPlacedIntoCatalog/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="2">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTALLHYPcatalogBeingUpdatel"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="catalogBeingUpdated ↦ bookBeingEdited∈dom(AddBook)∧AddBook∈BookCatalogs × Books ⇸ BookCatalogs" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.action#("/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.action#("/>
@@ -467,8 +473,11 @@
 <org.eventb.core.poPredicateSet name="EVTHYPcatalogBeingUpdatel'" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTIDENTcatalogBeingUpdatel" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookBeingEdited∉DefinedBooks(catalogBeingUpdated)" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#'"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPcatalogBeingUpdatel" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingUpdatel'" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="EVTHYPcatalogBeingUpdatel(" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingUpdatel'" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="BookTitle(bookBeingEdited)≠NoTitle" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPcatalogBeingUpdatel" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#EVTHYPcatalogBeingUpdatel(" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="BookAuthor(bookBeingEdited)≠NoAuthor" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog.bpo|org.eventb.core.poFile#BookEntryDialog|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookBeingEdited∈Books" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.invariant#*"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
 <org.eventb.core.poIdentifier name="BookCatalogs" org.eventb.core.type="ℙ(BookCatalogs)"/>
@@ -304,9 +304,10 @@
 <org.eventb.core.poPredicateSet name="EVTIDENTBookEntryContext-WithDefinedCategorif-" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime.bpo|org.eventb.core.poFile#BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="catalogBeingUpdated'" org.eventb.core.type="BookCatalogs"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPBookEntryContext-WithDefinedCategorif-" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime.bpo|org.eventb.core.poFile#BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime|org.eventb.core.poPredicateSet#EVTIDENTBookEntryContext-WithDefinedCategorif-" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="EVTALLHYPBookEntryContext-WithDefinedCategorif-" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime.bpo|org.eventb.core.poFile#BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime|org.eventb.core.poPredicateSet#EVTIDENTBookEntryContext-WithDefinedCategorif-" org.eventb.core.poStamp="2">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookBeingEdited∉DefinedBooks(catalogBeingUpdated)" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="BookTitle(bookBeingEdited)≠NoTitle" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="BookAuthor(bookBeingEdited)≠NoAuthor" org.eventb.core.source="/BookEntryDialog/BookEntryDialog.bum|org.eventb.core.machineFile#BookEntryDialog|org.eventb.core.event#3|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime.bpo|org.eventb.core.poFile#BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="bookBeingEdited∈Books" org.eventb.core.source="/BookEntryDialog/BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime.bum|org.eventb.core.machineFile#BookEntryDialog-LimitUserToSelectAndDeselectCategoriesOneAtATime|org.eventb.core.invariant#+"/>
