@@ -25,6 +25,7 @@
 <org.eventb.core.action name=")" org.eventb.core.assignment="bookIsBeingEdited ≔ FALSE" org.eventb.core.label="BookNoLongerBeingEdited"/>
 <org.eventb.core.parameter name="," org.eventb.core.identifier="updatedBookCatalog"/>
 <org.eventb.core.guard name="1" org.eventb.core.label="BookHasTitle" org.eventb.core.predicate="TitleOfEnteredBook(bookDialog) ≠ NoTitle"/>
+<org.eventb.core.guard name="2" org.eventb.core.label="BookHasAuthor" org.eventb.core.predicate="AuthorOfEnteredBook(bookDialog) ≠ NoAuthor"/>
 <org.eventb.core.guard name="-" org.eventb.core.label="UpdatedBookCatalogIsBookCatalogWindow" org.eventb.core.predicate="updatedBookCatalog ∈ BookCatalogWindow"/>
 <org.eventb.core.guard name="." org.eventb.core.label="UpdatedBookCatalogContainsNewBookAndOriginalBooks" org.eventb.core.predicate="TitlesOfBooksInCatalog(updatedBookCatalog) = {TitleOfEnteredBook(bookDialog)} ∪ TitlesOfBooksInCatalog(bookCatalog)"/>
 <org.eventb.core.action name="/" org.eventb.core.assignment="bookCatalog ≔ updatedBookCatalog" org.eventb.core.label="BookCatalogWasUpdated"/>
