@@ -2,11 +2,16 @@
 <org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
 <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Listeners"/>
 <org.eventb.core.carrierSet name="+" org.eventb.core.identifier="Titles"/>
+<org.eventb.core.carrierSet name="2" org.eventb.core.identifier="Authors"/>
 <org.eventb.core.carrierSet name="(" org.eventb.core.identifier="Books"/>
 <org.eventb.core.constant name="," org.eventb.core.identifier="NoTitle"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="NoAuthor"/>
 <org.eventb.core.constant name="." org.eventb.core.identifier="BookTitle"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="BookAuthor"/>
 <org.eventb.core.constant name=")" org.eventb.core.identifier="Run"/>
 <org.eventb.core.axiom name="-" org.eventb.core.label="NoTitleIsATitle" org.eventb.core.predicate="NoTitle ∈ Titles"/>
-<org.eventb.core.axiom name="/" org.eventb.core.label="BookTitleIsTitle" org.eventb.core.predicate="BookTitle ∈ Books → Titles"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="NoAuthorIsAnAuthor" org.eventb.core.predicate="NoAuthor ∈ Authors"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="TitleCanBeRetrievedFromBook" org.eventb.core.predicate="BookTitle ∈ Books → Titles"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="AuthorCanBeRetrievedFromBook" org.eventb.core.predicate="BookAuthor ∈ Books → Authors"/>
 <org.eventb.core.axiom name="*" org.eventb.core.label="RunPerformsActionOnListenerGivenBook" org.eventb.core.predicate="Run ∈ Listeners × Books → Listeners"/>
 </org.eventb.core.contextFile>

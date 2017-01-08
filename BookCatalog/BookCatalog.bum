@@ -13,6 +13,7 @@
 <org.eventb.core.guard name=")" org.eventb.core.label="NewBookIsABook" org.eventb.core.predicate="newBook ∈ Books"/>
 <org.eventb.core.guard name="1" org.eventb.core.label="NewBookIsNotDefined" org.eventb.core.predicate="newBook ∉ definedBooks"/>
 <org.eventb.core.guard name="3" org.eventb.core.label="NewBookHasTitle" org.eventb.core.predicate="BookTitle(newBook) ≠ NoTitle"/>
+<org.eventb.core.guard name="4" org.eventb.core.label="NewBookHasAuthor" org.eventb.core.predicate="BookAuthor(newBook) ≠ NoAuthor"/>
 <org.eventb.core.guard name="*" org.eventb.core.label="UpdatedListenersIsACollectionOfListeners" org.eventb.core.predicate="updatedListeners ∈ ℙ(Listeners)"/>
 <org.eventb.core.guard name="+" org.eventb.core.label="EachUpdatedListenerIsDerivedFromAnAddListener" org.eventb.core.predicate="∀ updatedListener · updatedListener ∈ updatedListeners ⇒ (∃ addListener · addListener ∈ addListeners ∧ updatedListener = Run(addListener ↦ newBook))"/>
 <org.eventb.core.guard name="," org.eventb.core.label="EachAddListenerHasADerivedListener" org.eventb.core.predicate="∀ addListener · addListener ∈ addListeners ⇒ (∃ updatedListener · updatedListener ∈ updatedListeners ∧ updatedListener = Run(addListener ↦ newBook))"/>

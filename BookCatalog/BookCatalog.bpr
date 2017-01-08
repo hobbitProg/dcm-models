@@ -431,4 +431,98 @@
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="AddBook/NewBookHasAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Authors,Books">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p15">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="BookAuthor" org.eventb.core.type="ℙ(Books×Authors)"/>
+<org.eventb.core.prIdent name="newBook" org.eventb.core.type="Books"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="BookAuthor∈Books ⇸ Authors"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="NoTitle∈Titles">
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="newBook∉definedBooks">
+<org.eventb.core.prIdent name="definedBooks" org.eventb.core.type="ℙ(Books)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="BookTitle(newBook)≠NoTitle">
+<org.eventb.core.prIdent name="BookTitle" org.eventb.core.type="ℙ(Books×Titles)"/>
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="NoAuthor∈Authors">
+<org.eventb.core.prIdent name="NoAuthor" org.eventb.core.type="Authors"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="definedBooks∈ℙ(Books)">
+<org.eventb.core.prIdent name="definedBooks" org.eventb.core.type="ℙ(Books)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="BookAuthor∈Books → Authors"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬newBook∈definedBooks">
+<org.eventb.core.prIdent name="definedBooks" org.eventb.core.type="ℙ(Books)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬BookTitle(newBook)=NoTitle">
+<org.eventb.core.prIdent name="BookTitle" org.eventb.core.type="ℙ(Books×Titles)"/>
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="addListeners∈ℙ(Listeners)">
+<org.eventb.core.prIdent name="Listeners" org.eventb.core.type="ℙ(Listeners)"/>
+<org.eventb.core.prIdent name="addListeners" org.eventb.core.type="ℙ(Listeners)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="newBook∈Books"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="newBook∈dom(BookAuthor)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀definedBook⦂Books·definedBook∈definedBooks⇒¬BookTitle(definedBook)=NoTitle">
+<org.eventb.core.prIdent name="BookTitle" org.eventb.core.type="ℙ(Books×Titles)"/>
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+<org.eventb.core.prIdent name="definedBooks" org.eventb.core.type="ℙ(Books)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="newBook∈dom(BookAuthor)∧BookAuthor∈Books ⇸ Authors"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀definedBook⦂Books·definedBook∈definedBooks⇒BookTitle(definedBook)≠NoTitle">
+<org.eventb.core.prIdent name="BookTitle" org.eventb.core.type="ℙ(Books×Titles)"/>
+<org.eventb.core.prIdent name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.prIdent name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+<org.eventb.core.prIdent name="definedBooks" org.eventb.core.type="ℙ(Books)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="Books"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+</org.eventb.core.prProof>
 </org.eventb.core.prFile>
