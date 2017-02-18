@@ -45,7 +45,7 @@
 <org.eventb.core.guard name="+" org.eventb.core.label="CategoriesAreAvailableToBeSelected" org.eventb.core.predicate="DefinedCategories∖selectedCategories ≠ ∅" org.eventb.core.theorem="true"/>
 <org.eventb.core.action name="," org.eventb.core.assignment="selectedCategories ≔ selectedCategories ∪ {newCategory}" org.eventb.core.label="NewCategoryIsNowSelected"/>
 </org.eventb.core.event>
-<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RemoveSelectedCatory">
+<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RemoveSelectedCategory">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="categoryToRemove"/>
 <org.eventb.core.guard name="," org.eventb.core.label="CategoriesAreBeingSelected" org.eventb.core.predicate="categoriesBeingSelected = TRUE"/>
 <org.eventb.core.guard name="(" org.eventb.core.label="CategoryToRemoveIsACategory" org.eventb.core.predicate="categoryToRemove ∈ Categories"/>
