@@ -5,7 +5,7 @@
 <org.eventb.core.psStatus name="StartSelectingCategories/CurrentlySelectedCategoriesAreCategoriesAssociatedWithBook/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="SelectNewCategory/CategoriesAreAvailableToBeSelected/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
 <org.eventb.core.psStatus name="SelectNewCategory/SelectedCategoriesMustBeDefined/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RemoveSelectedCategory/SelectedCategoriesMustBeDefined/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="true"/>
+<org.eventb.core.psStatus name="RemoveSelectedCategory/SelectedCategoriesMustBeDefined/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
 <org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameTilte/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameAuthor/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="AddCategories/UpdatedBookHasSameISBN/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>

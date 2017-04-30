@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
+<org.eventb.core.poIdentifier name="BookCatalogs" org.eventb.core.type="ℙ(BookCatalogs)"/>
+<org.eventb.core.poIdentifier name="Books" org.eventb.core.type="ℙ(Books)"/>
+<org.eventb.core.poIdentifier name="Categories" org.eventb.core.type="ℙ(Categories)"/>
+<org.eventb.core.poIdentifier name="CoverImages" org.eventb.core.type="ℙ(CoverImages)"/>
+<org.eventb.core.poIdentifier name="Descriptions" org.eventb.core.type="ℙ(Descriptions)"/>
+<org.eventb.core.poIdentifier name="ISBNs" org.eventb.core.type="ℙ(ISBNs)"/>
+<org.eventb.core.poIdentifier name="Titles" org.eventb.core.type="ℙ(Titles)"/>
+<org.eventb.core.poIdentifier name="AddBook" org.eventb.core.type="ℙ(BookCatalogs×Books×BookCatalogs)"/>
+<org.eventb.core.poIdentifier name="BookAuthor" org.eventb.core.type="ℙ(Books×Authors)"/>
+<org.eventb.core.poIdentifier name="BookCategories" org.eventb.core.type="ℙ(Books×ℙ(Categories))"/>
+<org.eventb.core.poIdentifier name="BookCover" org.eventb.core.type="ℙ(Books×CoverImages)"/>
+<org.eventb.core.poIdentifier name="BookDescription" org.eventb.core.type="ℙ(Books×Descriptions)"/>
+<org.eventb.core.poIdentifier name="BookISBN" org.eventb.core.type="ℙ(Books×ISBNs)"/>
+<org.eventb.core.poIdentifier name="BookTitle" org.eventb.core.type="ℙ(Books×Titles)"/>
+<org.eventb.core.poIdentifier name="DefinedBooks" org.eventb.core.type="ℙ(BookCatalogs×ℙ(Books))"/>
+<org.eventb.core.poIdentifier name="EmptyBook" org.eventb.core.type="Books"/>
+<org.eventb.core.poIdentifier name="EmptyBookCatalog" org.eventb.core.type="BookCatalogs"/>
+<org.eventb.core.poIdentifier name="NoAuthor" org.eventb.core.type="Authors"/>
+<org.eventb.core.poIdentifier name="NoCoverImage" org.eventb.core.type="CoverImages"/>
+<org.eventb.core.poIdentifier name="NoDescription" org.eventb.core.type="Descriptions"/>
+<org.eventb.core.poIdentifier name="NoISBN" org.eventb.core.type="ISBNs"/>
+<org.eventb.core.poIdentifier name="NoTitle" org.eventb.core.type="Titles"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloh" org.eventb.core.predicate="NoTitle∈Titles" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloi" org.eventb.core.predicate="NoAuthor∈Authors" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloj" org.eventb.core.predicate="NoISBN∈ISBNs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalok" org.eventb.core.predicate="NoDescription∈Descriptions" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#?"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalol" org.eventb.core.predicate="NoCoverImage∈CoverImages" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#E"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalom" org.eventb.core.predicate="BookTitle∈Books → Titles" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="EmptyBookCatalon" org.eventb.core.predicate="BookAuthor∈Books → Authors" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloo" org.eventb.core.predicate="BookISBN∈Books → ISBNs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#:"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalop" org.eventb.core.predicate="BookDescription∈Books → Descriptions" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#A"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloq" org.eventb.core.predicate="BookCover∈Books → CoverImages" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalor" org.eventb.core.predicate="BookCategories∈Books → ℙ(Categories)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#K"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalos" org.eventb.core.predicate="EmptyBook∈Books" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalot" org.eventb.core.predicate="BookTitle(EmptyBook)=NoTitle" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalou" org.eventb.core.predicate="BookAuthor(EmptyBook)=NoAuthor" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalov" org.eventb.core.predicate="BookISBN(EmptyBook)=NoISBN" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalow" org.eventb.core.predicate="BookDescription(EmptyBook)=NoDescription" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#B"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalox" org.eventb.core.predicate="BookCover(EmptyBook)=NoCoverImage" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#H"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloy" org.eventb.core.predicate="BookCategories(EmptyBook)=(∅ ⦂ ℙ(Categories))" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#L"/>
+<org.eventb.core.poPredicate name="EmptyBookCataloz" org.eventb.core.predicate="EmptyBookCatalog∈BookCatalogs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#O"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalo{" org.eventb.core.predicate="DefinedBooks∈BookCatalogs → ℙ(Books)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#Q"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalo|" org.eventb.core.predicate="DefinedBooks(EmptyBookCatalog)=(∅ ⦂ ℙ(Books))" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#R"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalo}" org.eventb.core.predicate="AddBook∈BookCatalogs × Books ⇸ BookCatalogs" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#T"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalo~" org.eventb.core.predicate="∀catalog⦂BookCatalogs,existingBook⦂Books·existingBook∈DefinedBooks(catalog)⇒catalog ↦ existingBook∉dom(AddBook)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#U"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalp'" org.eventb.core.predicate="∀catalog⦂BookCatalogs,newBook⦂Books·newBook∉DefinedBooks(catalog)⇒catalog ↦ newBook∈dom(AddBook)" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#W"/>
+<org.eventb.core.poPredicate name="EmptyBookCatalp(" org.eventb.core.predicate="∀catalog⦂BookCatalogs,newBook⦂Books·catalog ↦ newBook∈dom(AddBook)⇒DefinedBooks(AddBook(catalog ↦ newBook))=DefinedBooks(catalog)∪{newBook}" org.eventb.core.source="/BookEntryDialog/BookEntryContext.buc|org.eventb.core.contextFile#BookEntryContext|org.eventb.core.axiom#V"/>
+<org.eventb.core.poIdentifier name="DefinedCategories" org.eventb.core.type="ℙ(Categories)"/>
+<org.eventb.core.poPredicate name="DefinedCategoriet" org.eventb.core.predicate="DefinedCategories∈ℙ(Categories)" org.eventb.core.source="/BookEntryDialog/BookEntryContext-WithDefinedCategories.buc|org.eventb.core.contextFile#BookEntryContext-WithDefinedCategories|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="DefinedCategorieu" org.eventb.core.predicate="∀categoriesAssociatedWithBook⦂ℙ(Categories)·categoriesAssociatedWithBook∈ran(BookCategories)⇒categoriesAssociatedWithBook⊆DefinedCategories" org.eventb.core.source="/BookEntryDialog/BookEntryContext-WithDefinedCategories.buc|org.eventb.core.contextFile#BookEntryContext-WithDefinedCategories|org.eventb.core.axiom#*"/>
+<org.eventb.core.poIdentifier name="BookWithGivenTitleAndAuthorCanBePlacedIntoCatalog" org.eventb.core.type="ℙ(BookCatalogs×ℙ(Titles×ℙ(Authors×BOOL)))"/>
+<org.eventb.core.poPredicate name="BookWithGivenTitleAndAuthorCanBePlacedIntoCataloh" org.eventb.core.predicate="BookWithGivenTitleAndAuthorCanBePlacedIntoCatalog∈BookCatalogs → (Titles → (Authors → BOOL))" org.eventb.core.source="/BookEntryDialog/BookEntryContext-WithPredicateThatDeterminesExistanceOfTitleAuthorPair.buc|org.eventb.core.contextFile#BookEntryContext-WithPredicateThatDeterminesExistanceOfTitleAuthorPair|org.eventb.core.axiom#)"/>
+<org.eventb.core.poIdentifier name="BookWithGivenISBNCanBePlacedIntoCatalog" org.eventb.core.type="ℙ(BookCatalogs×ℙ(ISBNs×BOOL))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BookEntryDialog/BookEntryContext-WithPredicateThatDeterminesIfBookWithISBNCanBeAddedToCatalog.bpo|org.eventb.core.poFile#BookEntryContext-WithPredicateThatDeterminesIfBookWithISBNCanBeAddedToCatalog|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="BookWithGivenISBNCanBePlacedIntoCatalog∈BookCatalogs → (ISBNs → BOOL)" org.eventb.core.source="/BookEntryDialog/BookEntryContext-WithPredicateThatDeterminesIfBookWithISBNCanBeAddedToCatalog.buc|org.eventb.core.contextFile#BookEntryContext-WithPredicateThatDeterminesIfBookWithISBNCanBeAddedToCatalog|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

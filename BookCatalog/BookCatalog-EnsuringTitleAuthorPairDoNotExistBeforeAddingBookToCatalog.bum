@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="BookCatalogContext-WithISBN"/>
+<org.eventb.core.refinesMachine name=")" org.eventb.core.target="BookCatalog-EnsuringAuthorAndISBNExists"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="addListeners"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="AddListenersIsACollectionOfListeners" org.eventb.core.predicate="addListeners ∈ ℙ(Listeners)"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="definedBooks"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="DefinedBooksIsACollectionOfBooks" org.eventb.core.predicate="definedBooks ∈ ℙ(Books)"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="AllDefinedBooksHaveATitle" org.eventb.core.predicate="∀ definedBook · definedBook ∈ definedBooks ⇒ BookTitle(definedBook) ≠ NoTitle"/>
+<org.eventb.core.invariant name="/" org.eventb.core.label="AllDefinedBooksHaveAnAuthor" org.eventb.core.predicate="∀ definedBook · definedBook ∈ definedBooks ⇒ BookAuthor(definedBook) ≠ NoAuthor"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="AllDefinedBooksHaveAnISBN" org.eventb.core.predicate="∀ definedBook · definedBook ∈ definedBooks ⇒ BookISBN(definedBook) ≠ NoISBN"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="AllTitleAuthorPairsAreUnique" org.eventb.core.predicate="∀ firstBook, secondBook · firstBook ∈ definedBooks ∧ secondBook ∈ definedBooks ∧ BookTitle(firstBook) = BookTitle(secondBook) ∧ BookAuthor(firstBook) = BookAuthor(secondBook) ⇒ firstBook = secondBook"/>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddBook">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddBook"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="NewBookHasUniqueTitleAuthorPair" org.eventb.core.predicate="∀ definedBook · definedBook ∈ definedBooks ⇒ BookTitle(definedBook) ≠ BookTitle(newBook) ∨ (BookTitle(definedBook) = BookTitle(newBook) ∧ BookAuthor(definedBook) ≠ BookAuthor(newBook))"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="BookWithGivenTitleAndAuthorCanBePlacedIntoCatalog"/>
+</org.eventb.core.machineFile>

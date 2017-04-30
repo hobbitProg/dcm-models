@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="3">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poIdentifier name="ActiveCatalog" org.eventb.core.type="ℙ(ActiveCatalog)"/>
 <org.eventb.core.poIdentifier name="Authors" org.eventb.core.type="ℙ(Authors)"/>
 <org.eventb.core.poIdentifier name="BookCatalogWindow" org.eventb.core.type="ℙ(BookCatalogWindow)"/>
@@ -30,43 +30,43 @@
 <org.eventb.core.poIdentifier name="TitleOfEnteredBook" org.eventb.core.type="ℙ(BookEntryDialog×Titles)"/>
 <org.eventb.core.poIdentifier name="TitlesOfBooksInCatalog" org.eventb.core.type="ℙ(BookCatalogWindow×ℙ(Titles))"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="EmptySelectedBookHasNoTitle/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="3">
+<org.eventb.core.poSequent name="EmptySelectedBookHasNoTitle/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP8"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptySelectedBook∈dom(SelectedBookTitle)∧SelectedBookTitle∈SelectedBookWindow ⇸ Titles" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#&gt;"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP8"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptySelectedBookHasNoAuthor/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="EmptySelectedBookHasNoAuthor/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP9"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptySelectedBook∈dom(SelectedBookAuthor)∧SelectedBookAuthor∈SelectedBookWindow ⇸ Authors" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#J"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#J"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP9"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptySelectedBookHasNoISBN/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="EmptySelectedBookHasNoISBN/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP:"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptySelectedBook∈dom(SelectedBookISBN)∧SelectedBookISBN∈SelectedBookWindow ⇸ ISBNs" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#M"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#M"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP:"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptySelectedBookHasNoDescription/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="EmptySelectedBookHasNoDescription/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP;"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptySelectedBook∈dom(SelectedBookDescription)∧SelectedBookDescription∈SelectedBookWindow ⇸ Descriptions" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#T"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#T"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP;"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptySelectedBookHasNoCover/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="EmptySelectedBookHasNoCover/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP="/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptySelectedBook∈dom(SelectedBookCover)∧SelectedBookCover∈SelectedBookWindow ⇸ CoverImages" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#Y"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#Y"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP="/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="EmptySelectedBookHasNoCategories/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="2">
+<org.eventb.core.poSequent name="EmptySelectedBookHasNoCategories/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP&gt;"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="EmptySelectedBook∈dom(SelectedBookCategories)∧SelectedBookCategories∈SelectedBookWindow ⇸ ℙ(Categories)" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#\\"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#\\"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP&gt;"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="HYP8" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYP8" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="BookCatalog∈ActiveCatalog" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#."/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="NoTitle∈Titles" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#:"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="NoAuthor∈Authors" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#G"/>
@@ -86,22 +86,22 @@
 <org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="SelectedBookCover∈SelectedBookWindow → CoverImages" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#X"/>
 <org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="SelectedBookCategories∈SelectedBookWindow → ℙ(Categories)" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#["/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP9" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP8" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYP9" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP8" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="SelectedBookTitle(EmptySelectedBook)=NoTitle" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#&gt;"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP:" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP9" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYP:" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP9" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="SelectedBookAuthor(EmptySelectedBook)=NoAuthor" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#J"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP;" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP:" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYP;" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP:" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="SelectedBookISBN(EmptySelectedBook)=NoISBN" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#M"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP=" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP;" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYP=" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP;" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD21" org.eventb.core.predicate="SelectedBookDescription(EmptySelectedBook)=NoDescription" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#T"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="HYP&gt;" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP=" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="HYP&gt;" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP=" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD22" org.eventb.core.predicate="SelectedBookCover(EmptySelectedBook)=NoCoverImage" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#Y"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP&gt;" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ClientDesktop/DesktopContext.bpo|org.eventb.core.poFile#DesktopContext|org.eventb.core.poPredicateSet#HYP&gt;" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD23" org.eventb.core.predicate="SelectedBookCategories(EmptySelectedBook)=(∅ ⦂ ℙ(Categories))" org.eventb.core.source="/ClientDesktop/DesktopContext.buc|org.eventb.core.contextFile#DesktopContext|org.eventb.core.axiom#\\"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

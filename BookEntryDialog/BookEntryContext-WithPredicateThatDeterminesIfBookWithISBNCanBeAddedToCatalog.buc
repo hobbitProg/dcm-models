@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="BookEntryContext-WithPredicateThatDeterminesExistanceOfTitleAuthorPair"/>
+<org.eventb.core.constant name="(" org.eventb.core.identifier="BookWithGivenISBNCanBePlacedIntoCatalog"/>
+<org.eventb.core.axiom name=")" org.eventb.core.label="CanDetermineWhenBookWithGivenISBNCanBePlacedIntoCatalog" org.eventb.core.predicate="BookWithGivenISBNCanBePlacedIntoCatalog ∈ BookCatalogs → (ISBNs → BOOL)"/>
+</org.eventb.core.contextFile>
